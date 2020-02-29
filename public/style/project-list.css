@@ -1,0 +1,258 @@
+.wrapper {
+    min-width: 1024px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.header-wrapper {
+    padding: 32px 0;
+    border-bottom: 1px solid #ddd;
+    background-color: #fcfaf9;
+}
+
+.header-wrapper .header {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.writer {
+    zoom: 1;
+    overflow: auto;
+    overflow-x: hidden;
+    margin: 0;
+    height: 106px;
+}
+
+.writer .profile {
+    float: left;
+    width: 102px;
+    height: 102px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.writer .profile .img {
+    border-radius: 100%;
+}
+
+.writer .profile .img,
+.writer .profile img {
+    width: 100px;
+    height: 100px;
+}
+
+.writer .profile .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.writer .info {
+    margin-left: 120px;
+    font-size: 1.3rem;
+    padding-top: 5px;
+}
+
+.writer .info .name-wrapper {
+    max-height: 33px;
+    overflow: hidden;
+}
+
+.writer .info .name {
+    font-weight: 600;
+}
+
+.writer .info .sentence {
+    font-family: "Noto Serif KR", "serif";
+    margin: 3px 0;
+    color: #666;
+}
+
+.portfolio-list-wrapper {
+    padding: 32px 32px 65px;
+}
+
+.masonry {
+    -moz-column-count: 7;
+    column-count: 7;
+    -moz-column-gap: 32px;
+    -webkit-column-gap: 32px;
+    grid-column-gap: 32px;
+    column-gap: 32px;
+}
+
+.portfolio-card {
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 5px 0 32px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .13);
+    -moz-box-shadow: 0 1px 7px rgba(0, 0, 0, .13);
+    -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, .13);
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+.portfolio-card:hover {
+    background-color: #fdfdfd;
+    box-shadow: 0 1px 9px rgba(0, 0, 0, .23);
+    -moz-box-shadow: 0 1px 9px rgba(0, 0, 0, .23);
+    -webkit-box-shadow: 0 1px 9px rgba(0, 0, 0, .23);
+}
+
+.portfolio-card .header {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #eef7f2;
+    border-bottom: 1px solid #dbe0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-card .header .cover-background {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    height: 140px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.portfolio-card .content {
+    padding: 18px 20px;
+    word-break: break-all;
+}
+
+.portfolio-card .content .title {
+    display: block;
+    font-weight: 600;
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+    font-size: 1.2rem;
+    border-bottom: 1px dotted #ddd;
+    word-break: break-all;
+}
+
+.portfolio-card ul.stack {
+    margin: 0 20px;
+    /*padding: 10px 0 15px;*/
+    padding: 10px 0 0;
+    list-style: none;
+    font-size: .9rem;
+    border-top: 1px solid #eee;
+}
+
+.portfolio-card ul.stack li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.portfolio-card ul.stack .stack-circle {
+    font-size: .86rem;
+    content: "●";
+    color: #999;
+}
+
+.portfolio-card .footer {
+    text-align: right;
+    font-size: .9rem;
+    text-decoration: underline;
+    padding: 0 20px 15px;
+    color: #463d66;
+}
+
+@media only screen and (max-width: 2560px) {
+    .masonry {
+        -moz-column-count: 6;
+        column-count: 6;
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .masonry {
+        -moz-column-count: 5;
+        column-count: 5;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .masonry {
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .masonry {
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .masonry {
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .masonry {
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        min-width: 300px;
+        max-width: 768px;
+    }
+
+    .header-wrapper .header {
+        min-width: 300px;
+        max-width: 768px;
+        width: auto;
+    }
+
+    .writer {
+        margin: 0;
+        padding: 0 10px;
+        height: 76px;
+    }
+
+    .writer .profile {
+        float: left;
+        width: 72px;
+        height: 72px;
+    }
+
+    .writer .profile .img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .writer .info {
+        margin-left: 80px;
+        font-size: 1rem;
+        padding-top: 0;
+    }
+
+    .writer .info .name-wrapper {
+        height: 24px;
+        overflow: hidden;
+    }
+
+    .writer .info .sentence {
+        max-height: 22px;
+        overflow: hidden;
+    }
+}

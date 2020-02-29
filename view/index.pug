@@ -1,0 +1,113 @@
+doctype html
+html(lang='ko')
+    head
+        include head.pug
+        link(rel='stylesheet' type='text/css' href='/static/style/index.css')
+    body
+        .wrapper
+            .header
+                .cover(style={'background-image': 'url(' + portfolioData.profile.coverImage + ')'})
+                    .cover-text-wrapper
+                        .cover-text= portfolioData.profile.coverText
+                .profile-wrapper
+                    .profile(style={'background-image': 'url(' + portfolioData.profile.image + ')'})
+                .name
+                    span.h2-font= portfolioData.profile.name
+                    span.h3-font= portfolioData.profile.desc
+                .contact
+                    .center.cannot-drag
+                        .left
+                            span.circle-icon.cannot-drag
+                                i.material-icons email
+                            span.contact-txt= portfolioData.profile.email
+                        .right
+                            span.circle-icon.cannot-drag
+                                i.material-icons smartphone
+                            span.contact-txt= portfolioData.profile.phone
+                        span.circle-icon.cannot-drag
+                            i.material-icons work
+                        span.contact-txt= portfolioData.profile.work
+            .body
+                .dot-horizontal
+                .left
+                    .detail-box(style={'margin-bottom': '12px'})
+                        each item in portfolioData.left.social
+                            .social-contact
+                                img(src=item.ico)
+                                a(href=item.url target='_blank')= item.url
+                    .detail-box
+                        span.title 소개
+                        span!= portfolioData.left.info.replace(/\n/g, '<br>')
+                    .detail-box
+                        span.title 경력
+                        if portfolioData.left.career.length > 0
+                            ul.normal-list
+                                each item in portfolioData.left.career
+                                    li
+                                        .list-text
+                                            .company= item.company
+                                            .job= item.job
+                                            .period= item.period
+                                            .desc= item.desc
+                        else
+                            div 등록된 경력이 없습니다.
+
+                    .detail-box
+                        span.title 교육
+                        ul.normal-list
+                            each item in portfolioData.left.education
+                                li
+                                    .list-text
+                                        .company= item.company
+                                        .job= item.job
+                                        .period= item.period
+                .content
+                    .detail-box
+                        span.title Tech Stack
+                        ul.stack-list
+                            - let stackData={}
+                            each project in portfolioData.content.project.data
+                                each stack in project.stack
+                                    if stackData[stack]
+                                        - stackData[stack]++
+                                    else
+                                        - stackData[stack] = 1
+                            each cnt, key in stackData
+                                if portfolioData.content.stack_filter.indexOf(key) > 0
+                                    li
+                                        =key
+                                        span.stack-cnt= cnt
+                    .detail-box
+                        .title
+                            a(href='/project') 프로젝트
+                                span.edit-plus-btn 더 보기
+                        ul.portfolio-list
+                            - const projectData = portfolioData.content.project.data.slice()
+                            each item, idx in projectData.reverse().slice(0,portfolioData.content.project.count)
+                                a(href='/project/'+(projectData.length-idx))
+                                    li
+                                        .list-img
+                                            .img(style={'background-image': 'url(' + item.img[0] + ')'})
+                                        .list-content
+                                            .subject= item.subject
+                                            .period= item.period
+                                            .stack
+                                                ul
+                                                    each stack in item.stack
+                                                        li
+                                                            span.stack-circle(style={color: colorScheme.scheme[stack]}) ●
+                                                            = ' ' + stack
+
+                    .detail-box.detail-box__posts
+                        span.title
+                            a(href='')
+                                | 집필활동
+                                span.edit-plus-btn 더 보기
+                        ul.portfolio-list
+                            each item in portfolioData.content.author
+                                a(href=item.url target='_blank')
+                                    li
+                                        .list-img
+                                            .img(style={'background-image': 'url(' + item.img + ')'})
+                                        .list-content
+                                            .subject= item.subject

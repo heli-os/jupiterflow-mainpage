@@ -1,0 +1,221 @@
+.wrapper {
+    min-width: 1024px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.portfolio-header {
+    background-color: #fcfaf9;
+    border-bottom: 1px solid #e5e4dd;
+}
+
+.header-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.header-wrapper .header {
+    margin-bottom: 16px;
+    font-size: .95rem;
+}
+
+.header-wrapper .header .left {
+    float: left;
+}
+
+.header-wrapper .header .left .mini-profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.header-wrapper .header .content {
+    margin-left: 40px;
+    padding-top: 2px;
+}
+
+.header-wrapper .header .content .title {
+    word-break: break-all;
+}
+
+.header-wrapper .header .content .title b {
+    font-weight: 600;
+    margin: 0 4px 0 0;
+}
+
+.header-wrapper .portfolio-name {
+    font-weight: 600;
+    color: #592f8d;
+}
+
+.portfolio-content {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.portfolio-content .tech-stack-wrapper b {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.portfolio-content .tech-stack-wrapper .item {
+    display: inline-block;
+    padding: 3px 16px;
+    border: 1px solid #bbb;
+    border-radius: 24px;
+    font-size: .9rem;
+    font-weight: 600;
+    margin: 6px 10px 0 0;
+}
+
+.portfolio-content > .impact {
+    margin-top: 20px;
+    border: 2px solid #dedede;
+    border-radius: 4px;
+    background-color: #fffcff;
+    padding: 28px 30px;
+}
+
+.portfolio-content > .impact .project-name {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.portfolio-content > .impact .project-summary {
+    font-size: 1rem;
+    color: #333;
+}
+
+.portfolio-content > .impact .project-date {
+    margin: 10px 0;
+}
+
+.portfolio-content > .impact .project-date .round-box {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #e5e2e0;
+    padding: 3px 12px;
+    font-size: .8rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.portfolio-content > .impact .project-item {
+    margin-top: 5px;
+    font-size: .9rem;
+    color: #333;
+}
+
+.portfolio-content > .impact .project-item .label {
+    display: inline-block;
+    width: 100px;
+    font-weight: 600;
+}
+
+.portfolio-content > .impact .project-item ul.stack {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-content > .impact .project-item ul.stack li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: .8rem;
+    font-weight: 900;
+    color: #666;
+}
+
+.portfolio-content > .impact .project-item ul.stack .stack-circle {
+    font-size: .6rem;
+    content: "●";
+    color: #999;
+}
+
+.portfolio-content > .impact > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio-content > .impact > ul li {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: center;
+    overflow: hidden;
+    color: #888;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.portfolio-content > .impact > ul li img {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.portfolio-content > .content {
+    margin-top: 20px;
+    padding: 0;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+}
+
+.portfolio-content > .content .title {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.portfolio-content > .content .desc-box {
+    padding: 20px 14px 10px;
+}
+
+.portfolio-content > .content .desc-box .content {
+    font-size: 1rem;
+    padding: 0 5px;
+}
+
+.markdown-body {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: #24292e;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.markdown-body > :last-child {
+    margin-bottom: 0 !important;
+}
+
+.markdown-body:after, .markdown-body:before {
+    display: table;
+    content: "";
+}
+
+.markdown-body:after {
+    clear: both;
+}

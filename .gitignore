@@ -106,5 +106,5 @@ dist
 
 # workspace setting files
 .idea/
-._config/
+_config/
 *.py

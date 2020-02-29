@@ -1,0 +1,38 @@
+doctype html
+html(lang='ko')
+    head
+        include head.pug
+        link(rel='stylesheet' type='text/css' href='/static/style/project-list.css')
+    body
+        .wrapper.cannot-drag
+            .header-wrapper
+                .header
+                    .writer
+                        .profile
+                            a(href='/')
+                                .img(style={'background-image':'url('+portfolioData.profile.image + ')'})
+                        .info
+                            .name-wrapper
+                                a(href='/')
+                                    span.name= portfolioData.profile.name
+                                    span.title= ' ' + portfolioData.profile.desc
+                            .sentence= portfolioData.profile.coverText
+            .portfolio-list-wrapper
+                .masonry
+                    - const projectData = portfolioData.content.project.data.slice()
+                    each item, idx in projectData.reverse()
+                        .portfolio-wrapper
+                            a(href='/project/'+(projectData.length-idx))
+                                .portfolio-card
+                                        .header
+                                            .cover-background(style={'background-image':'url('+item.img[0]+')'})
+                                        .content
+                                            span.title= item.subject
+                                            = item.desc
+                                        ul.stack
+                                            each stack in item.stack
+                                                li
+                                                    span.stack-circle(style={color: colorScheme.scheme[stack]}) ●
+                                                    = ' ' + stack
+                                        .footer 자세히
+                    div(style={clear:'both'})

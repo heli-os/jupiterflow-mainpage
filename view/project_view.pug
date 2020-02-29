@@ -1,0 +1,60 @@
+doctype html
+html(lang='ko')
+    head
+        include head.pug
+        link(rel='stylesheet' type='text/css' href='/static/style/project-view.css')
+        link(rel='stylesheet' type='text/css' href='/static/vendor/lightbox2/css/lightbox.css')
+        link(rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css')
+    body
+        .wrapper.cannot-drag
+            - const projectData = portfolioData.content.project.data.slice().reverse()
+            - const _postNum = projectData.length - postNum
+            .portfolio-header
+                .header-wrapper
+                    .header
+                        .left
+                            a(href='/project')
+                                .mini-profile(style={'background-image':'url(' + portfolioData.profile.image + ')'})
+                        .content
+                            .title
+                                a(href='/project')
+                                    //b= portfolioData.profile.name
+                                    b 프로젝트
+                                b!= '&nbsp;/&nbsp;'
+                                span.portfolio-name= projectData[_postNum].subject
+            .portfolio-content.can-drag
+                .tech-stack-wrapper
+                    b 이 프로젝트의 Tech Stack
+                    br
+                    div
+                        each stack in projectData[_postNum].stack
+                            span.item= stack
+                .impact
+                    .project-name= projectData[_postNum].subject
+                    .project-summary= projectData[_postNum].desc
+                    .project-date
+                        span.round-box= projectData[_postNum].period
+                    .project-item
+                        span.label Tech Stack
+                        ul.stack
+                            each stack in projectData[_postNum].stack
+                                li
+                                    span.stack-circle(style={color: colorScheme.scheme[stack]}) ●
+                                    = ' ' + stack
+                    .project-item
+                        span.label 프로젝트 등급
+                        = projectData[_postNum].progress
+                    ul
+                        each imgSrc in projectData[_postNum].img
+                            li
+                                a(href=imgSrc style={cursor:'pointer'} data-lightbox='projectImages' data-title='Project-Images')
+                                    img(src=imgSrc)
+                .content
+                    .title Proejct 세부내용
+                    .desc-box
+                        .content
+                            .markdown-body
+                                != markdownRender(postNum)
+
+
+        script(src='/static/vendor/lightbox2/js/lightbox-plus-jquery.js')
