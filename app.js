@@ -14,7 +14,7 @@ const colorScheme = require(path.join(__dirname, 'data', 'colorScheme.json'));
 
 const indexRouter = require('./route/index');
 const projectRouer = require('./route/project');
-const authorRouter = require('./route/author');
+const postRouter = require('./route/post');
 
 const markdownRender = require('./util/markdown');
 
@@ -42,7 +42,7 @@ const setParams = (req, res, next) => {
 
 app.use('/', setParams, indexRouter);
 app.use('/project', setParams, projectRouer);
-app.use('/author', setParams, authorRouter);
+app.use('/post', setParams, postRouter);
 
 https.createServer(optionsForHTTPS, app).listen(9608, () => {
     console.log('9608 connected !');

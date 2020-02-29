@@ -10,7 +10,7 @@ router.use((req, res, next) =>{
 });
 
 router.get('/', (req, res) => {
-    res.render('author', {portfolioData: portfolioData});
+    res.render('post', {portfolioData: portfolioData});
 });
 
 module.exports = router;

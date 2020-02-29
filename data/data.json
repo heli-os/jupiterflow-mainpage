@@ -3,7 +3,6 @@
     "coverImage": "/static/images/profile/cover.jpg",
     "coverText": "JIN TAEYANG'S Portfolio",
     "image": "/static/images/profile/profile_image.jpg",
-    "image_cp": "https://meeta.io/_nuxt/img/e528a7e.png",
     "name": "진태양",
     "desc": "Student",
     "email": "keriel@jupiterflow.com",
@@ -140,7 +139,7 @@
         }
       ]
     },
-    "author": [
+    "post": [
       {
         "subject": "JupiterFlow BLOG",
         "img": "/static/images/jupiter.png",
