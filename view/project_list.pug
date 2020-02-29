@@ -2,6 +2,10 @@ doctype html
 html(lang='ko')
     head
         include head.pug
+        meta(property='og:url'          content='https://jupiterflow.com/project')
+        meta(property='og:title'        content=portfolioData.profile.coverText)
+        meta(property='og:description'  content=portfolioData.profile.desc)
+        meta(property='og:image'        content='https://jupiterflow.com' + portfolioData.profile.coverImage)
         link(rel='stylesheet' type='text/css' href='/static/style/project-list.css')
     body
         .wrapper.cannot-drag

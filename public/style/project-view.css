@@ -219,3 +219,43 @@
 .markdown-body:after {
     clear: both;
 }
+
+@media only screen and (max-width: 768px) {
+   .wrapper {
+        min-width: 300px;
+        max-width: 768px;
+    }
+    .header-wrapper {
+        width: auto;
+        min-width: 300px;
+        max-width: 768px;
+        padding: 15px 10px 5px;
+    }
+    .header-wrapper .header {
+        zoom: 1;
+        overflow: auto;
+    }
+    .header-wrapper .header .content {
+        margin-right: 60px;
+    }
+    .portfolio-content {
+        width: auto;
+        min-width: 300px;
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+    .portfolio-content .tech-stack-wrapper {
+        padding: 0 10px 15px;
+    }
+    .portfolio-content>.impact {
+        margin: 15px;
+        padding: 15px;
+    }
+    .portfolio-content>.content {
+        margin: 15px;
+    }
+    .portfolio-content>.content .desc-box {
+        padding: 12px 10px 7px;
+    }
+}
