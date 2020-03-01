@@ -2,6 +2,8 @@ doctype html
 html(lang='ko')
     head
         include head.pug
+        link(rel='canonical' href='https://jupiterflow.com')
+        meta(name='description' content=portfolioData.profile.desc)
         meta(property='og:url'          content='https://jupiterflow.com')
         meta(property='og:title'        content=portfolioData.profile.coverText)
         meta(property='og:description'  content=portfolioData.profile.desc)
@@ -58,13 +60,21 @@ html(lang='ko')
 
                     .detail-box
                         span.title 교육
-                        ul.normal-list
-                            each item in portfolioData.left.education
-                                li
-                                    .list-text
-                                        .company= item.company
-                                        .job= item.job
-                                        .period= item.period
+                        if portfolioData.left.education.length > 0
+                            ul.normal-list
+                                each item in portfolioData.left.education
+                                    li
+                                        .list-text
+                                            .company= item.company
+                                            .job= item.job
+                                            .period= item.period
+                        else
+                            div 등록된 교육이 없습니다.
+                    .detail-box
+                        ins.adsbygoogle(style={display:'block'} data-ad-client='ca-pub-1462947422010620' data-ad-slot='8724258860' data-ad-format='auto' data-full-width-responsive='true')
+                        script.
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+
                 .content
                     .detail-box
                         span.title Tech Stack
@@ -88,7 +98,7 @@ html(lang='ko')
                         ul.portfolio-list
                             - const projectData = portfolioData.content.project.data.slice()
                             each item, idx in projectData.reverse().slice(0,portfolioData.content.project.count)
-                                a(href='/project/'+(projectData.length-idx))
+                                a(href='/project/' + (projectData.length - idx))
                                     li
                                         .list-img
                                             .img(style={'background-image': 'url(' + item.img[0] + ')'})
@@ -104,9 +114,9 @@ html(lang='ko')
 
                     .detail-box.detail-box__posts
                         span.title
-                            a(href='')
-                                | 집필활동
-                                span.edit-plus-btn 더 보기
+                            //a(href='')
+                            | 집필활동
+                            //span.edit-plus-btn 더 보기
                         ul.portfolio-list
                             each item in portfolioData.content.post
                                 a(href=item.url target='_blank')

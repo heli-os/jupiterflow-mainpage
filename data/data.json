@@ -21,7 +21,9 @@
       }
     ],
     "info": "JupiterFlow.com을 운영중인 진태양입니다.\r\n블로그에서는 프로그래밍과 관련된 이슈, 정보, 기술 등을 다루고있습니다.\r\nReact-Django를 통한 Full-stack 개발자로 거듭나고자 합니다.",
-    "career": [],
+    "career": [
+
+    ],
     "career_cp": [
       {
         "company": "JupiterFlow",
@@ -29,6 +31,8 @@
         "period": "2020년 02월 01일 ~ 현재",
         "desc": "현재 JupiterFlow Service에서 학습 중"
       }
+    ],
+    "education_cp": [
     ],
     "education": [
       {
@@ -55,7 +59,7 @@
         {
           "subject": "HTML5 Delivery Tracker",
           "desc": "설명 테스트 :: HTML5 Delivery Tracker",
-          "markdown": "",
+          "markdown": "https://raw.githubusercontent.com/JupiterFlow/html5_ync_delivery-tracker/master/README.md",
           "img": [
             "/static/images/project/1/000.png"
           ],

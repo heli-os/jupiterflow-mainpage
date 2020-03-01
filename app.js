@@ -12,10 +12,6 @@ const path = require('path');
 const portfolioData = require(path.join(__dirname, 'data', 'data.json'));
 const colorScheme = require(path.join(__dirname, 'data', 'colorScheme.json'));
 
-const indexRouter = require('./route/index');
-const projectRouer = require('./route/project');
-const postRouter = require('./route/post');
-
 const markdownRender = require('./util/markdown');
 
 if (app.get('env') === 'development')
@@ -40,9 +36,11 @@ const setParams = (req, res, next) => {
     next();
 };
 
-app.use('/', setParams, indexRouter);
-app.use('/project', setParams, projectRouer);
-app.use('/post', setParams, postRouter);
+app.use('/',setParams, require('./route/sitemaps'));
+app.use('/', setParams, require('./route/index'));
+app.use('/project', setParams, require('./route/project'));
+app.use('/post', setParams, require('./route/post'));
+
 
 https.createServer(optionsForHTTPS, app).listen(9608, () => {
     console.log('9608 connected !');

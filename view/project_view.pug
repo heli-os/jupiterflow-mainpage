@@ -2,10 +2,12 @@ doctype html
 html(lang='ko')
     head
         include head.pug
-        meta(property='og:url'          content='https://jupiterflow.com/project/'+postNum)
-        meta(property='og:title'        content=portfolioData.content.project.data[postNum-1].subject)
-        meta(property='og:description'  content=portfolioData.content.project.data[postNum-1].desc)
-        meta(property='og:image'        content='https://jupiterflow.com' + portfolioData.content.project.data[postNum-1].img[0])
+        link(rel='canonical' href='https://jupiterflow.com/project/' + postNum)
+        meta(name='description' content=portfolioData.content.project.data[postNum - 1].desc)
+        meta(property='og:url'          content='https://jupiterflow.com/project/' + postNum)
+        meta(property='og:title'        content=portfolioData.content.project.data[postNum - 1].subject)
+        meta(property='og:description'  content=portfolioData.content.project.data[postNum - 1].desc)
+        meta(property='og:image'        content='https://jupiterflow.com' + portfolioData.content.project.data[postNum - 1].img[0])
         link(rel='stylesheet' type='text/css' href='/static/style/project-view.css')
         link(rel='stylesheet' type='text/css' href='/static/vendor/lightbox2/css/lightbox.css')
         link(rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css')
@@ -18,7 +20,7 @@ html(lang='ko')
                     .header
                         .left
                             a(href='/project')
-                                .mini-profile(style={'background-image':'url(' + portfolioData.profile.image + ')'})
+                                .mini-profile(style={'background-image': 'url(' + portfolioData.profile.image + ')'})
                         .content
                             .title
                                 a(href='/project')
@@ -51,7 +53,7 @@ html(lang='ko')
                     ul
                         each imgSrc in projectData[_postNum].img
                             li
-                                a(href=imgSrc style={cursor:'pointer'} data-lightbox='projectImages' data-title='Project-Images')
+                                a(href=imgSrc style={cursor: 'pointer'} data-lightbox='projectImages' data-title='Project-Images')
                                     img(src=imgSrc)
                 .content
                     .title Proejct 세부내용
@@ -60,5 +62,11 @@ html(lang='ko')
                             .markdown-body
                                 != markdownRender(postNum)
 
+                .content
+                    ins.adsbygoogle(style={
+                        display: 'block'
+                    } data-ad-format='auto' data-ad-client='ca-pub-1462947422010620' data-ad-slot='3081049946' data-full-width-responsive='true')
+                    script.
+                        (adsbygoogle = window.adsbygoogle || []).push({});
 
         script(src='/static/vendor/lightbox2/js/lightbox-plus-jquery.js')
