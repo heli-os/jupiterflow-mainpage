@@ -32,9 +32,9 @@
         "desc": "현재 JupiterFlow Service에서 학습 중"
       }
     ],
-    "education_cp": [
-    ],
     "education": [
+    ],
+    "education_cp": [
       {
         "company": "영남이공대학교",
         "job": "컴퓨터공학 전문학사",
@@ -121,6 +121,7 @@
             "Arduino",
             "Node.js",
             "Express",
+            "Pug",
             "MariaDB",
             "RestAPI"
           ]
@@ -148,6 +149,11 @@
         "subject": "JupiterFlow BLOG",
         "img": "/static/images/jupiter.png",
         "url": "//blog.jupiterflow.com"
+      },
+      {
+        "subject": "NAVER 지식iN",
+        "img": "/static/images/sdn.png",
+        "url": "//kin.naver.com/profile/index.nhn?u=%2FABXPKGzDSxT1ntlABi1abcMhL8jw2LzRs6sb8WE3NQ%3D"
       }
     ]
   }
