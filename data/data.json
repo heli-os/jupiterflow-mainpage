@@ -58,7 +58,7 @@
       "data": [
         {
           "subject": "HTML5 Delivery Tracker",
-          "desc": "설명 테스트 :: HTML5 Delivery Tracker",
+          "desc": "이 프로젝트는 영남이공대학교 컴퓨터정보과 2019학년도 1학년 1학기 HTML5/CSS3 기말 실기시험(프로젝트 제작 및 발표) 평가를 위해 제작된 프로젝트입니다.",
           "markdown": "https://raw.githubusercontent.com/JupiterFlow/html5_ync_delivery-tracker/master/README.md",
           "img": [
             "/static/images/project/1/000.png"
