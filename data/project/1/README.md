@@ -54,11 +54,8 @@
 
 * [About the Project](#about-the-project)
   * [Summary](#summary)
-  * [Main Contents](#main-contents)
+  * [Main Features](#main-features)
   * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [License](#license)
@@ -88,20 +85,6 @@
 * [MariaDB](https://mariadb.org)
 * [PHP](https://www.php.net)
 
-<!-- GETTING STARTED -->
-## Getting Started
-Not provided.
-
-### Prerequisites
-```sh
-Nothing.
-```
-
-### Installation
-```sh
-Not provided.
-```
-
 <!-- USAGE EXAMPLES -->
 ## Usage
 1. 배송조회 메뉴 진입
@@ -109,21 +92,9 @@ Not provided.
 3. 송장번호 입력
 4. 조회하기
 
-
 <!-- CONTRIBUTING -->
 ## Contributing
 This repository is not managed.
-
-<!--
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b PROFILE/REPO`)
-3. Commit your Changes (`git commit -m 'Add some REPO'`)
-4. Push to the Branch (`git push origin PROFILE/REPO`)
-5. Open a Pull Request
--->
-
 
 <!-- LICENSE -->
 ## License

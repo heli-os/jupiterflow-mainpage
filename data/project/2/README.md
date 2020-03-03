@@ -27,7 +27,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/JupiterFlow/icms">
-    <img src="https://github.com/JupiterFlow/icms/blob/master/_data/000.jpg?raw=true" alt="Logo" width="350" height="350">
+    <img src="https://github.com/JupiterFlow/icms/blob/master/_data/README.png?raw=true" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">스마트 사이니지 RestAPI & Interface</h3>
@@ -52,12 +52,8 @@
 
 * [About the Project](#about-the-project)
   * [Summary](#summary)
-  * [Main Contents](#main-contents)
+  * [Main Features](#main-features)
   * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
@@ -91,26 +87,6 @@
 ### Built With
 * [Java SE](https://www.oracle.com/java/technologies/javase-downloads.html)
 * [MariaDB](https://mariadb.org)
-
-<!-- GETTING STARTED -->
-## Getting Started
-Not provided.
-
-### Prerequisites
-```sh
-Nothing.
-```
-
-### Installation
-```sh
-Not provided.
-```
-
-<!-- USAGE EXAMPLES -->
-## Usage
-```sh
-Nothing.
-```
 
 <!-- CONTRIBUTING -->
 ## Contributing
