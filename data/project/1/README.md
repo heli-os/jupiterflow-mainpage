@@ -78,7 +78,7 @@
 * DB 연동을 위한 PHP Model
 * JQuery, Ajax를 이용한 Front Controller
 
-### Main Contents
+### Main Features
 * 공지사항 조회/작성/수정/삭제
 * 배송조회(SweetTracker API 연동)
 * 로그인 후 배송조회 시 마이페이지에서 현황 관리 가능
