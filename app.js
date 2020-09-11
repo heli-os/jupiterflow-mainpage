@@ -25,21 +25,22 @@ app.use('/static', express.static(path.join(__dirname, 'public'), {
 }));
 
 app.use(express.json()); // for parsing application/json
-app.use(express.urlencoded({extended: true})); // for parsing application/x-www-form-urlencoded
+app.use(express.urlencoded({extended: false})); // for parsing application/x-www-form-urlencoded
 
 const setParams = (req, res, next) => {
     req._config = {
         portfolioData: portfolioData,
         colorScheme: colorScheme,
         markdownRender: markdownRender
-    }
+    };
     next();
 };
 
-app.use('/',setParams, require('./route/sitemaps'));
+app.use('/', setParams, require('./route/sitemaps'));
 app.use('/', setParams, require('./route/index'));
 app.use('/project', setParams, require('./route/project'));
 app.use('/post', setParams, require('./route/post'));
+app.use('/ync', setParams, require('./route/ync'));
 
 
 https.createServer(optionsForHTTPS, app).listen(9608, () => {

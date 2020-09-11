@@ -11,8 +11,9 @@
   "dependencies": {
     "express": "^4.17.1",
     "fs": "0.0.1-security",
+    "highlight.js": "^10.0.2",
     "https": "^1.0.0",
-    "marked": "^0.8.0",
+    "marked": "^1.0.0",
     "path": "^0.12.7",
     "pug": "^2.0.4",
     "sitemap": "^5.1.0",

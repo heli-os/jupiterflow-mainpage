@@ -1,11 +1,11 @@
 {
   "profile": {
     "coverImage": "/static/images/profile/cover.jpg",
-    "coverText": "JIN TAEYANG'S Portfolio",
+    "coverText": "진태양 개발자 포트폴리오",
     "image": "/static/images/profile/profile_image.jpg",
     "name": "진태양",
-    "desc": "Student",
-    "email": "keriel@jupiterflow.com",
+    "desc": "모든 잘못은 전적으로 우리 프로그래머에게 있다.",
+    "email": "sun@jupiterflow.com",
     "work": "Inactive",
     "phone": "Private"
   },
@@ -13,28 +13,39 @@
     "social": [
       {
         "ico": "/static/images/profile/github-ico.png",
-        "url": "https://github.com/JupiterFlow"
+        "url": "https://github.com/960813"
       },
       {
         "ico": "/static/images/profile/blog-ico.png",
         "url": "https://blog.jupiterflow.com"
+      },
+      {
+        "ico": "/static/images/profile/youtube-ico.png",
+        "url": "https://bit.ly/2YPIcfD"
       }
     ],
-    "info": "JupiterFlow.com을 운영중인 진태양입니다.\r\n블로그에서는 프로그래밍과 관련된 이슈, 정보, 기술 등을 다루고있습니다.\r\nReact-Django를 통한 Full-stack 개발자로 거듭나고자 합니다.",
+    "info": "저는 기존에 정부에서 제공하는 데이터 관련 서비스를 간소화해, 개발자가 아닌 시민들도 데이터를 활용할 수 있는 시스템을 구축하고자합니다.",
     "career": [
-
-    ],
-    "career_cp": [
       {
-        "company": "JupiterFlow",
-        "job": "대표",
-        "period": "2020년 02월 01일 ~ 현재",
-        "desc": "현재 JupiterFlow Service에서 학습 중"
+        "company": "The 2nd AYARF",
+        "job": "연사",
+        "period": "2020년 08월 26일",
+        "desc": "국경을 넘어 펼쳐지는 이 시대의 문제를 해결하려는 청년 연구활동가 대상 대한민국 정부혁신 사례 소개 및 질의응답 진행"
+      },
+      {
+        "company": "제3회 정부혁신제안 해커톤",
+        "job": "국민기획단·멘토",
+        "period": "2020년 04월 22일 ~ 2020년 07월 25일",
+        "desc": "해커톤의 구체적인 기획 및 진행 방법 등 논의 / 해커톤 과정에서 참가자들의 문의에 답변 진행"
+      },
+      {
+        "company": "코드포코리아",
+        "job": "메인테이너",
+        "period": "2020년 03월 16일 ~ 현재",
+        "desc": "코드포코리아 운영 및 TF 회의"
       }
     ],
     "education": [
-    ],
-    "education_cp": [
       {
         "company": "영남이공대학교",
         "job": "컴퓨터공학 전문학사",
@@ -46,20 +57,23 @@
     "stack_filter": [
       "C",
       "Node.js",
-      "Express",
+      "Express.js",
       "PHP",
       "JAVA",
+      "JQuery",
       "RestAPI",
+      "OpenAPI",
       "Arduino",
-      "MariaDB"
+      "MariaDB",
+      "Chrome Extension"
     ],
     "project": {
       "count": 5,
       "data": [
         {
           "subject": "HTML5 Delivery Tracker",
-          "desc": "이 프로젝트는 영남이공대학교 컴퓨터정보과 2019학년도 1학년 1학기 HTML5/CSS3 기말 실기시험(프로젝트 제작 및 발표) 평가를 위해 제작된 프로젝트입니다.",
-          "markdown": "https://raw.githubusercontent.com/JupiterFlow/html5_ync_delivery-tracker/master/README.md",
+          "desc": "영남이공대학교 컴퓨터정보과 2019학년도 1학년 1학기 HTML5/CSS3 기말 실기시험(프로젝트 제작 및 발표) 평가를 위해 제작된 프로젝트입니다.",
+          "markdown": "https://raw.githubusercontent.com/960813/html5_ync_delivery-tracker/master/README.md",
           "img": [
             "/static/images/project/1/000.png"
           ],
@@ -75,8 +89,8 @@
         },
         {
           "subject": "스마트 사이니지 API & Interface",
-          "desc": "설명 테스트 :: 스마트 사이니지 API & Interface",
-          "markdown": "https://raw.githubusercontent.com/JupiterFlow/icms/master/README.md",
+          "desc": "구형 스마트폰을 엔진으로 한 스마트 사이니지 원격 CMS 셋톱박스 창업 아이템 서버 소스코드",
+          "markdown": "https://raw.githubusercontent.com/960813/icms/master/README.md",
           "img": [
             "/static/images/project/2/000.jpg",
             "/static/images/project/2/001.jpg",
@@ -93,34 +107,44 @@
         },
         {
           "subject": "PIRARE(Pinterest semi clone with PHP)",
-          "desc": "설명 테스트 :: PIRARE(Pinterest semi clone with PHP)",
-          "markdown": "",
+          "desc": "PHP를 이용해 Pinterest 서비스를 클론한 웹 개발 프로젝트입니다.",
+          "markdown": "https://raw.githubusercontent.com/960813/pirare/master/README.md",
           "img": [
-            "/static/images/project/3/000.png"
+            "/static/images/project/3/000.png",
+            "/static/images/project/3/001.png",
+            "/static/images/project/3/002.png",
+            "/static/images/project/3/003.png",
+            "/static/images/project/3/004.png",
+            "/static/images/project/3/005.png"
           ],
           "period": "2019년 10월 14일 ~ 2019년 11월 26일",
           "progress": "상용화",
           "stack": [
             "HTML5",
             "ajax",
-            "jQuery",
+            "JQuery",
             "PHP",
             "MariaDB"
           ]
         },
         {
           "subject": "스마트 공기 청정기 지니",
-          "desc": "설명 테스트 :: 스마트 공기 청정기 지니",
-          "markdown": "https://raw.githubusercontent.com/JupiterFlow/nodeMCU_air-purifier/master/README.md",
+          "desc": "[제 1회 YNC 메이커톤] 미세먼지 감지와 공기청정 기능을 가진 무드등 및 CMS",
+          "markdown": "https://raw.githubusercontent.com/960813/nodeMCU_air-purifier/master/README.md",
           "img": [
-            "/static/images/project/4/000.png"
+            "/static/images/project/4/000.png",
+            "/static/images/project/4/001.JPG",
+            "/static/images/project/4/002.JPG",
+            "/static/images/project/4/003.JPG",
+            "/static/images/project/4/004.JPG",
+            "/static/images/project/4/005.JPG"
           ],
           "period": "2020년 02월 04일 ~ 2020년 02월 21일",
           "progress": "개발완료",
           "stack": [
             "Arduino",
             "Node.js",
-            "Express",
+            "Express.js",
             "Pug",
             "MariaDB",
             "RestAPI"
@@ -128,18 +152,100 @@
         },
         {
           "subject": "Pokemon",
-          "desc": "설명 테스트 :: Pokemon",
-          "markdown": "",
+          "desc": "This is an online Pokemon game where data is synchronized to the central server.",
+          "markdown": "https://raw.githubusercontent.com/960813/pokemon/master/README.md",
           "img": [
             "/static/images/project/5/000.png"
           ],
-          "period": "2020년 02월 25일 ~ 현재",
-          "progress": "개발중",
+          "period": "2020년 02월 25일 ~ 2020년 06월 22일",
+          "progress": "개발완료",
           "stack": [
             "C",
             "Allegro5",
             "winsock2",
+            "unixSocket",
             "MariaDB"
+          ]
+        },{
+          "subject": "영화진흥위원회 오픈 API 활용 웹",
+          "desc": "[kobis-movie-app] 영화진흥위원회 오픈 API 활용 제이쿼리 과제",
+          "markdown": "https://raw.githubusercontent.com/960813/JQuery-kobis-app/master/README.md",
+          "img": [
+            "/static/images/project/6/001.JPG",
+            "/static/images/project/6/002.JPG",
+            "/static/images/project/6/003.JPG"
+          ],
+          "period": "2020년 05월 04일 ~ 2020년 05월 05일",
+          "progress": "개발완료",
+          "stack": [
+            "Node.js",
+            "Express.js",
+            "JQuery",
+            "Mustache",
+            "OpenAPI"
+          ]
+        },{
+          "subject": "Pokemon Web",
+          "desc": "This is a website where you can download the other project (online Pokemon) and get information about Pokemon.",
+          "markdown": "https://raw.githubusercontent.com/960813/pokemon-web/master/README.md",
+          "img": [
+            "/static/images/project/7/000.png",
+            "/static/images/project/7/001.png",
+            "/static/images/project/7/002.png",
+            "/static/images/project/7/003.png",
+            "/static/images/project/7/004.png",
+            "/static/images/project/7/005.png",
+            "/static/images/project/7/006.png"
+          ],
+          "period": "2020년 07월 04일 ~ 2020년 07월 05일",
+          "progress": "개발완료",
+          "stack": [
+            "JQuery",
+            "Bootstrap"
+          ]
+        },{
+          "subject": "웨어마스크",
+          "desc": "코로나19에 대응하기 위한 공적마스크 재고 알리미 사이트",
+          "markdown": "",
+          "img": [
+            "/static/images/project/8/000.png"
+          ],
+          "period": "2020년 03월 08일 ~ 2020년 07월 11일",
+          "progress": "상용화",
+          "stack": [
+            "Node.js",
+            "Express.js",
+            "OpenAPI"
+          ]
+        },{
+          "subject": "가온길",
+          "desc": "본 서비스는 21대 국회 공약과 공개된 군 입찰 내역, 언론 보도자료 등을 바탕으로 국민의 세금이 얼마나 투명하게 집행되고 있는지 시각적으로 보여줍니다.",
+          "markdown": "https://raw.githubusercontent.com/TEAM-TROST/gaongill/master/README.md",
+          "img": [
+            "/static/images/project/9/000.png",
+            "/static/images/project/9/001.png"
+          ],
+          "period": "2020년 07월 09일 ~ 2020년 07월 16일",
+          "progress": "상용화",
+          "stack": [
+            "Node.js",
+            "Express.js",
+            "OpenAPI",
+            "MariaDB"
+          ]
+        },{
+          "subject": "영이공 LMS 서포터",
+          "desc": "영남이공대학교 LMS 지원 확장 프로그램입니다. 학습하지 않은 강의와 과제를 한눈에 볼 수 있습니다!",
+          "markdown": "https://raw.githubusercontent.com/960813/ync-lms-supporter/master/README.md",
+          "img": [
+            "/static/images/project/10/00.png",
+            "/static/images/project/10/05.png"
+          ],
+          "period": "2020년 09월 04일 ~ 2020년 09월 05일",
+          "progress": "상용화",
+          "stack": [
+            "Chrome Extension",
+            "Javascript"
           ]
         }
       ]

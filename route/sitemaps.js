@@ -30,7 +30,7 @@ router.get('/sitemap.xml', (req, res, next) => {
         return
     }
     try {
-        const smStream = new SitemapStream({hostname: 'https://jupiterflow.com/'});
+        const smStream = new SitemapStream({hostname: 'https://www.jupiterflow.com/'});
         const pipeline = smStream.pipe(createGzip());
 
 

@@ -26,8 +26,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/JupiterFlow/html5_ync_delivery-tracker">
-    <img src="https://github.com/JupiterFlow/html5_ync_delivery-tracker/blob/master/images/README.png?raw=true" alt="Logo" width="80" height="80">
+  <a href="https://github.com/960813/html5_ync_delivery-tracker">
+    <img src="https://github.com/960813/html5_ync_delivery-tracker/blob/master/images/README.png?raw=true" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">HTML5 YNC Delivery-Tracker</h3>
@@ -37,14 +37,14 @@
     <br />
     과제 요구 조건 중 최소 html 파일 개수를 충족하기 위하여 HTML5=>Ajax=>PHP 통신 방식 채택.
     <br />
-    <a href="https://github.com/JupiterFlow/html5_ync_delivery-tracker"><strong>Explore the Github »</strong></a>
+    <a href="https://github.com/960813/html5_ync_delivery-tracker"><strong>Explore the Github »</strong></a>
     <br />
     <br />
     <a href="https://delivery.jupiterflow.com">View Demo</a>
     ·
-    <a href="https://github.com/JupiterFlow/html5_ync_delivery-tracker/issues">Report Bug</a>
+    <a href="https://github.com/960813/html5_ync_delivery-tracker/issues">Report Bug</a>
     ·
-    <a href="https://github.com/JupiterFlow/html5_ync_delivery-tracker/issues">Request Feature</a>
+    <a href="https://github.com/960813/html5_ync_delivery-tracker/issues">Request Feature</a>
   </p>
 </p>
 
@@ -104,7 +104,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 JIN TAEYANG - keriel@jupiterflow.com
 
-Project Link: [https://github.com/JupiterFlow/html5_ync_delivery-tracker](https://github.com/JupiterFlow/html5_ync_delivery-tracker)
+Project Link: [https://github.com/960813/html5_ync_delivery-tracker](https://github.com/960813/html5_ync_delivery-tracker)
 
 
 <!-- ACKNOWLEDGEMENTS -->
@@ -117,21 +117,21 @@ Project Link: [https://github.com/JupiterFlow/html5_ync_delivery-tracker](https:
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/JupiterFlow/html5_ync_delivery-tracker?style=flat-square
-[contributors-url]: https://github.com/JupiterFlow/html5_ync_delivery-tracker/graphs/contributors
+[contributors-url]: https://github.com/960813/html5_ync_delivery-tracker/graphs/contributors
 
 [forks-shield]: https://img.shields.io/github/forks/JupiterFlow/html5_ync_delivery-tracker?style=flat-square
-[forks-url]: https://github.com/JupiterFlow/html5_ync_delivery-tracker/network/members
+[forks-url]: https://github.com/960813/html5_ync_delivery-tracker/network/members
 
 [stars-shield]: https://img.shields.io/github/stars/JupiterFlow/html5_ync_delivery-tracker?style=flat-square
-[stars-url]: https://github.com/JupiterFlow/html5_ync_delivery-tracker/stargazers
+[stars-url]: https://github.com/960813/html5_ync_delivery-tracker/stargazers
 
 [issues-shield]: https://img.shields.io/github/issues/JupiterFlow/html5_ync_delivery-tracker?style=flat-square
-[issues-url]: https://github.com/JupiterFlow/html5_ync_delivery-tracker/issues
+[issues-url]: https://github.com/960813/html5_ync_delivery-tracker/issues
 
 [license-shield]: https://img.shields.io/github/license/JupiterFlow/html5_ync_delivery-tracker?style=flat-square
-[license-url]: https://github.com/JupiterFlow/html5_ync_delivery-tracker/blob/master/LICENSE.txt
+[license-url]: https://github.com/960813/html5_ync_delivery-tracker/blob/master/LICENSE.txt
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jupiterflow
 
-[product-screenshot]: https://github.com/JupiterFlow/html5_ync_delivery-tracker/blob/master/images/workspace.JPG?raw=true
+[product-screenshot]: https://github.com/960813/html5_ync_delivery-tracker/blob/master/images/workspace.JPG?raw=true
