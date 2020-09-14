@@ -10,6 +10,9 @@ html(lang='ko')
         meta(property='og:title'        content=portfolioData.profile.coverText + ' - 프로젝트 목록')
         meta(property='og:description'  content=portfolioData.profile.desc)
         meta(property='og:image'        content='https://jupiterflow.com' + portfolioData.profile.image)
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js')
+        script(src='/static/js/project-list.js')
+        link(rel='stylesheet' type='text/css' href='/static/style/global.css')
         link(rel='stylesheet' type='text/css' href='/static/style/project-list.css')
     body
         .wrapper.cannot-drag
@@ -30,13 +33,16 @@ html(lang='ko')
                 script.
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 .masonry
-                    - const projectData = portfolioData.content.project.data.slice()
-                    each item, idx in projectData.reverse()
-                        .portfolio-wrapper
-                            a(href='/project/'+(projectData.length-idx))
-                                .portfolio-card
+                    - const projectData = portfolioData.content.project.data.slice().reverse()
+                    each item, idx in projectData
+                        if item.hot
+                            .portfolio-wrapper
+                                a(href='/project/' + (projectData.length - idx))
+                                    .portfolio-card
+                                        .project-hot-ribbon
+                                            span HOT
                                         .header
-                                            .cover-background(style={'background-image':'url('+item.img[0]+')'})
+                                            .cover-background(style={'background-image': 'url(' + item.img[0] + ')'})
                                         .content
                                             span.title= item.subject
                                             = item.desc
@@ -46,4 +52,19 @@ html(lang='ko')
                                                     span.stack-circle(style={color: colorScheme.scheme[stack]}) ●
                                                     = ' ' + stack
                                         .footer 자세히
-                    div(style={clear:'both'})
+                    each item, idx in projectData
+                        if !item.hot
+                            .portfolio-wrapper
+                                a(href='/project/' + (projectData.length - idx))
+                                    .portfolio-card
+                                        .header
+                                            .cover-background(style={'background-image': 'url(' + item.img[0] + ')'})
+                                        .content
+                                            span.title= item.subject
+                                            = item.desc
+                                        ul.stack
+                                            each stack in item.stack
+                                                li
+                                                    span.stack-circle(style={color: colorScheme.scheme[stack]}) ●
+                                                    = ' ' + stack
+                                        .footer 자세히

@@ -1,0 +1,26 @@
+.project-hot-ribbon {
+    width: 72px;
+    height: 80px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.project-hot-ribbon span {
+    position: absolute;
+    display: block;
+    width: 115px;
+    padding: 5px 0;
+    background-color: #3498db;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    color: #fff;
+    font: 700 18px/1 'Lato', sans-serif;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    text-transform: uppercase;
+    text-align: center;
+    right: -10px;
+    top: 10px;
+    transform: rotate(-45deg);
+    z-index: 2;
+}

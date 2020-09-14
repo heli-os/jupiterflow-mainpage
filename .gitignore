@@ -108,3 +108,7 @@ dist
 .idea/
 _config/
 *.py
+
+# ync assignment filter
+ync/
+ync.js

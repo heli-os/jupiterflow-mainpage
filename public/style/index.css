@@ -254,6 +254,11 @@ body {
     -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, .11);
     -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, .11);
     border: 1px solid #fff;
+    position: relative;
+}
+
+.detail-box .portfolio-list > a > li:hover > .project-hot-ribbon > span {
+    background-color: #2980b9;
 }
 
 .detail-box .portfolio-list > a > li:hover {

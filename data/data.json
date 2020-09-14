@@ -85,7 +85,8 @@
             "PHP",
             "RestAPI",
             "MariaDB"
-          ]
+          ],
+          "hot": false
         },
         {
           "subject": "스마트 사이니지 API & Interface",
@@ -103,7 +104,8 @@
             "jersey",
             "RestAPI",
             "MariaDB"
-          ]
+          ],
+          "hot": false
         },
         {
           "subject": "PIRARE(Pinterest semi clone with PHP)",
@@ -125,7 +127,8 @@
             "JQuery",
             "PHP",
             "MariaDB"
-          ]
+          ],
+          "hot": false
         },
         {
           "subject": "스마트 공기 청정기 지니",
@@ -148,7 +151,8 @@
             "Pug",
             "MariaDB",
             "RestAPI"
-          ]
+          ],
+          "hot": true
         },
         {
           "subject": "Pokemon",
@@ -165,7 +169,8 @@
             "winsock2",
             "unixSocket",
             "MariaDB"
-          ]
+          ],
+          "hot": false
         },{
           "subject": "영화진흥위원회 오픈 API 활용 웹",
           "desc": "[kobis-movie-app] 영화진흥위원회 오픈 API 활용 제이쿼리 과제",
@@ -183,7 +188,8 @@
             "JQuery",
             "Mustache",
             "OpenAPI"
-          ]
+          ],
+          "hot": false
         },{
           "subject": "Pokemon Web",
           "desc": "This is a website where you can download the other project (online Pokemon) and get information about Pokemon.",
@@ -202,7 +208,8 @@
           "stack": [
             "JQuery",
             "Bootstrap"
-          ]
+          ],
+          "hot": false
         },{
           "subject": "웨어마스크",
           "desc": "코로나19에 대응하기 위한 공적마스크 재고 알리미 사이트",
@@ -216,7 +223,8 @@
             "Node.js",
             "Express.js",
             "OpenAPI"
-          ]
+          ],
+          "hot": true
         },{
           "subject": "가온길",
           "desc": "본 서비스는 21대 국회 공약과 공개된 군 입찰 내역, 언론 보도자료 등을 바탕으로 국민의 세금이 얼마나 투명하게 집행되고 있는지 시각적으로 보여줍니다.",
@@ -232,7 +240,8 @@
             "Express.js",
             "OpenAPI",
             "MariaDB"
-          ]
+          ],
+          "hot": true
         },{
           "subject": "영이공 LMS 서포터",
           "desc": "영남이공대학교 LMS 지원 확장 프로그램입니다. 학습하지 않은 강의와 과제를 한눈에 볼 수 있습니다!",
@@ -246,7 +255,8 @@
           "stack": [
             "Chrome Extension",
             "Javascript"
-          ]
+          ],
+          "hot": false
         }
       ]
     },
