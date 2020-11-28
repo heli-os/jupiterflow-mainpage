@@ -48,7 +48,8 @@ body {
     height: 160px;
     overflow: hidden;
     background-repeat: no-repeat;
-    background-position: 50%;
+    /*background-position: 50%;*/
+    background-position-y: 18%;
     background-size: cover;
     border-radius: 100%;
     text-align: center;
