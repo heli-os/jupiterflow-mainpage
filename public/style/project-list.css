@@ -48,7 +48,8 @@
 .writer .profile .img {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50%;
+    /*background-position: 50%;*/
+    background-position-y: 18%;
 }
 
 .writer .info {
