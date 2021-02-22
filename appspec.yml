@@ -8,8 +8,8 @@ files:
 
 permissions:
   - object: /home/jupiterflow/app/mainpage/
-    owner: jupiterflow
-    group: jupiterflow
+    owner: ec2-user
+    group: ec2-user
     mode: 755
     type:
       - directory
