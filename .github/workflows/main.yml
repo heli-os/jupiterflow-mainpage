@@ -3,7 +3,7 @@ name: Deploy to Production(JupiterFlow MainPage)
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
