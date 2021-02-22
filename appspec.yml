@@ -1,0 +1,20 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /home/jupiterflow/app/mainpage/
+    overwrite: yes
+
+permissions:
+  - object: /home/jupiterflow/app/mainpage/
+    owner: jupiterflow
+    group: jupiterflow
+    mode: 755
+    type:
+      - directory
+
+hooks:
+  AfterInstall:
+    - location: deploy.sh
+      timeout: 60

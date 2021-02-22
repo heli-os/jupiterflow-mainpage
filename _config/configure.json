@@ -1,0 +1,6 @@
+{
+  "global": {
+    "ROOT_PATH": "data",
+    "MARKDOWN_EMPTY": "# EMPTY"
+  }
+}

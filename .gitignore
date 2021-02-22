@@ -106,8 +106,7 @@ dist
 
 # workspace setting files
 .idea/
-_config/
-*.py
+#_config/
 
 # ync assignment filter
 ync/
