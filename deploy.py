@@ -1,30 +1,10 @@
 import requests
 import os
 import json
-import pysftp
-
-
-def put_r_portable(sftp_self, localdir, remotedir, preserve_mtime=False):
-    for entry in os.listdir(localdir):
-        remotepath = remotedir + "/" + entry
-        localpath = os.path.join(localdir, entry)
-        if not os.path.isfile(localpath):
-            try:
-                sftp_self.mkdir(remotepath)
-            except OSError:
-                pass
-            put_r_portable(sftp_self, localpath, remotepath, preserve_mtime)
-        else:
-            print("fileUpload :", localpath)
-            sftp_self.put(localpath, remotepath, preserve_mtime=preserve_mtime)
 
 
 with open('_config/configure.json') as f:
     configureData = json.load(f)
-
-sftp_hostname = configureData["sftp"]["host"]
-sftp_username = configureData["sftp"]["user"]
-sftp_privkey = configureData["sftp"]["privKey"]
 
 ROOT_PATH = configureData["global"]["ROOT_PATH"]
 
