@@ -1,3 +1,8 @@
 REPOSITORY=/home/jupiterflow/app/mainpage
 cd $REPOSITORY
-python3 ./deploy.py && /usr/local/bin/pm2 restart "main"
+
+npm install
+
+python3 ./deploy.py
+
+pm2 restart main

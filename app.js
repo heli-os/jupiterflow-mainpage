@@ -40,7 +40,6 @@ app.use('/', setParams, require('./route/sitemaps'));
 app.use('/', setParams, require('./route/index'));
 app.use('/project', setParams, require('./route/project'));
 app.use('/post', setParams, require('./route/post'));
-app.use('/ync', setParams, require('./route/ync'));
 
 
 https.createServer(optionsForHTTPS, app).listen(9608, () => {
