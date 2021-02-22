@@ -1,4 +1,4 @@
-HOME = /home/jupiterflow/app/mainpage
+HOME=/home/jupiterflow/app/mainpage
 cd $HOME
 python3 ./deploy.py
 
