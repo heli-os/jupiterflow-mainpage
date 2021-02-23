@@ -191,7 +191,7 @@ body {
 
 .wrapper .body .left {
     float: left;
-    width: 120px;
+    width: 320px;
     margin-top: 20px;
     padding: 3px 20px 3px 8px;
     min-height: 400px;
@@ -227,7 +227,7 @@ body {
 
 .wrapper .body .content {
     margin-top: 20px;
-    margin-left: 120px;
+    margin-left: 320px;
     min-height: 400px;
     padding: 3px 8px 0 28px;
     border-left: 1px dotted #aaa;

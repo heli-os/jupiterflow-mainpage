@@ -39,25 +39,6 @@ html(lang='ko')
                         span.contact-txt= portfolioData.profile.work
             .body
                 .dot-horizontal
-                .detail-box
-                    span.title Tech Stack
-                    ul.stack-list
-                        - let stackData={}
-                        each project in portfolioData.content.project.data
-                            each stack in project.stack
-                                if stackData[stack]
-                                    - stackData[stack]++
-                                else
-                                    - stackData[stack] = 1
-                        - let sortable = []
-                        each idx, stack in stackData
-                            - sortable.push([stack, stackData[stack]])
-                        - sortable.sort((a, b)=> { return b[1] - a[1]; })
-                        each item in sortable
-                            if portfolioData.content.stack_filter.indexOf(item[0]) > 0
-                                li
-                                    =item[0]
-                                    span.stack-cnt= item[1]
                 .left
                     .detail-box(style={'margin-bottom': '12px'})
                         each item in portfolioData.left.social
@@ -104,6 +85,25 @@ html(lang='ko')
                             (adsbygoogle = window.adsbygoogle || []).push({});
 
                 .content
+                    .detail-box
+                        span.title Tech Stack
+                        ul.stack-list
+                            - let stackData={}
+                            each project in portfolioData.content.project.data
+                                each stack in project.stack
+                                    if stackData[stack]
+                                        - stackData[stack]++
+                                    else
+                                        - stackData[stack] = 1
+                            - let sortable = []
+                            each idx, stack in stackData
+                                - sortable.push([stack, stackData[stack]])
+                            - sortable.sort((a, b)=> { return b[1] - a[1]; })
+                            each item in sortable
+                                if portfolioData.content.stack_filter.indexOf(item[0]) > 0
+                                    li
+                                        =item[0]
+                                        span.stack-cnt= item[1]
                     .detail-box
                         .title
                             a(href='/project') 프로젝트
