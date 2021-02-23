@@ -14,6 +14,8 @@
     "Arduino": "black",
     "Node.js": "#026e00",
     "Express": "#55f7e8",
-    "Pug": "#7b3300"
+    "Pug": "#7b3300",
+    "Python": "#407eb0",
+    "Spring Boot": "#6db53d"
   }
 }
