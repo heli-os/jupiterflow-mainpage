@@ -53,7 +53,7 @@ html(lang='ko')
                             span.edit-plus-btn 더 보기
                         if portfolioData.left.career.length > 0
                             ul.normal-list
-                                each item in portfolioData.left.career.slice(0, 5)
+                                each item in portfolioData.left.career.data.slice(0, portfolioData.left.career.count)
                                     li
                                         .list-text
                                             .company= item.company
