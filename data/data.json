@@ -65,6 +65,8 @@
       "OpenAPI",
       "Arduino",
       "MariaDB",
+      "Python",
+      "Spring Boot",
       "Chrome Extension"
     ],
     "project": {
@@ -171,7 +173,8 @@
             "MariaDB"
           ],
           "hot": false
-        },{
+        },
+        {
           "subject": "영화진흥위원회 오픈 API 활용 웹",
           "desc": "[kobis-movie-app] 영화진흥위원회 오픈 API 활용 제이쿼리 과제",
           "markdown": "https://raw.githubusercontent.com/960813/JQuery-kobis-app/master/README.md",
@@ -190,7 +193,8 @@
             "OpenAPI"
           ],
           "hot": false
-        },{
+        },
+        {
           "subject": "Pokemon Web",
           "desc": "This is a website where you can download the other project (online Pokemon) and get information about Pokemon.",
           "markdown": "https://raw.githubusercontent.com/960813/pokemon-web/master/README.md",
@@ -210,7 +214,8 @@
             "Bootstrap"
           ],
           "hot": false
-        },{
+        },
+        {
           "subject": "웨어마스크",
           "desc": "코로나19에 대응하기 위한 공적마스크 재고 알리미 사이트",
           "markdown": "",
@@ -225,7 +230,8 @@
             "OpenAPI"
           ],
           "hot": true
-        },{
+        },
+        {
           "subject": "가온길",
           "desc": "본 서비스는 21대 국회 공약과 공개된 군 입찰 내역, 언론 보도자료 등을 바탕으로 국민의 세금이 얼마나 투명하게 집행되고 있는지 시각적으로 보여줍니다.",
           "markdown": "https://raw.githubusercontent.com/TEAM-TROST/gaongill/master/README.md",
@@ -242,7 +248,8 @@
             "MariaDB"
           ],
           "hot": true
-        },{
+        },
+        {
           "subject": "영이공 LMS 서포터",
           "desc": "영남이공대학교 LMS 지원 확장 프로그램입니다. 학습하지 않은 강의와 과제를 한눈에 볼 수 있습니다!",
           "markdown": "https://raw.githubusercontent.com/960813/ync-lms-supporter/master/README.md",
@@ -257,6 +264,22 @@
             "Javascript"
           ],
           "hot": false
+        },
+        {
+          "subject": "코로나19 개인안심번호",
+          "desc": "코로나19 역학조사 목적으로 사용되는 수기출입명부의 개인정보 유출 이슈를 해결하기 위한 아이디어와 시스템",
+          "markdown": "",
+          "img": [
+            "/static/images/project/11/00.jpg"
+          ],
+          "period": "2020년 12월 02일 ~ 2021년 02월 19일",
+          "progress": "상용화",
+          "stack": [
+            "Python",
+            "Spring Boot",
+            "JAVA"
+          ],
+          "hot": true
         }
       ]
     },
