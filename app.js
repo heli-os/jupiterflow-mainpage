@@ -39,7 +39,6 @@ const setParams = (req, res, next) => {
 app.use('/', setParams, require('./route/sitemaps'));
 app.use('/', setParams, require('./route/index'));
 app.use('/project', setParams, require('./route/project'));
-app.use('/post', setParams, require('./route/post'));
 
 
 https.createServer(optionsForHTTPS, app).listen(9608, () => {
