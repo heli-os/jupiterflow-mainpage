@@ -1,9 +1,8 @@
+require('dotenv').config();
 const https = require('https');
+const http = require('http');
 const fs = require('fs');
-const optionsForHTTPS = {
-    key: fs.readFileSync('/etc/letsencrypt/live/jupiterflow.com/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/jupiterflow.com/cert.pem')
-};
+
 
 const express = require('express');
 const app = express();
@@ -42,6 +41,17 @@ app.use('/project', setParams, require('./route/project'));
 app.use('/career', setParams, require('./route/career'));
 
 
-https.createServer(optionsForHTTPS, app).listen(9608, () => {
-    console.log('9608 connected !');
-});
+if (process.env.RUN_ENVIRONMENT === 'DEBUG') {
+    http.createServer(app).listen(process.env.RUN_PORT, () => {
+        console.log(`${process.env.RUN_PORT} connected !`);
+    });
+} else if (process.env.RUN_ENVIRONMENT === 'PRODUCT') {
+    const optionsForHTTPS = {
+        key: fs.readFileSync('/etc/letsencrypt/live/jupiterflow.com/privkey.pem'),
+        cert: fs.readFileSync('/etc/letsencrypt/live/jupiterflow.com/cert.pem')
+    };
+    https.createServer(optionsForHTTPS, app).listen(process.env.RUN_PORT, () => {
+        console.log(`${process.env.RUN_PORT} connected !``);
+    });
+}
+

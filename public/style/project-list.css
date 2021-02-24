@@ -1,7 +1,3 @@
-.portfolio-list-wrapper {
-    padding: 32px 32px 65px;
-}
-
 .masonry {
     display: grid;
     grid-gap: 16px;
