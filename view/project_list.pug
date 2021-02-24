@@ -16,18 +16,7 @@ html(lang='ko')
         link(rel='stylesheet' type='text/css' href='/static/style/project-list.css')
     body
         .wrapper.cannot-drag
-            .header-wrapper
-                .header
-                    .writer
-                        .profile
-                            a(href='/')
-                                .img(style={'background-image':'url('+portfolioData.profile.image + ')'})
-                        .info
-                            .name-wrapper
-                                a(href='/')
-                                    span.name= portfolioData.profile.name
-                                    span.title!= ' ' + portfolioData.profile.desc
-                            .sentence= portfolioData.profile.coverText
+            include heaer_wrapper
             .portfolio-list-wrapper
                 ins.adsbygoogle(style={display: 'block', 'margin-bottom':'30px'} data-ad-client='ca-pub-1462947422010620' data-ad-slot='4984819246' data-ad-format='auto' data-full-width-responsive='true')
                 script.

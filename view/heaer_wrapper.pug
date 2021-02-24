@@ -1,0 +1,12 @@
+.header-wrapper
+    .header
+        .writer
+            .profile
+                a(href='/')
+                    .img(style={'background-image':'url('+portfolioData.profile.image + ')'})
+            .info
+                .name-wrapper
+                    a(href='/')
+                        span.name= portfolioData.profile.name
+                        span.title!= ' ' + portfolioData.profile.desc
+                .sentence= portfolioData.profile.coverText

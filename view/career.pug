@@ -1,0 +1,23 @@
+doctype html
+html(lang='ko')
+    head
+        include head.pug
+        link(rel='canonical' href='https://jupiterflow.com/project')
+        title= portfolioData.profile.coverText + ' - 경력'
+        meta(name='title' content=portfolioData.profile.coverText + ' - 경력')
+        meta(name='description' content=portfolioData.profile.desc)
+        meta(property='og:url'          content='https://jupiterflow.com/project')
+        meta(property='og:title'        content=portfolioData.profile.coverText + ' - 경력')
+        meta(property='og:description'  content=portfolioData.profile.desc)
+        meta(property='og:image'        content='https://jupiterflow.com' + portfolioData.profile.image)
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js')
+        link(rel='stylesheet' type='text/css' href='/static/style/global.css')
+        link(rel='stylesheet' type='text/css' href='/static/style/project-list.css')
+    body
+        .wrapper.cannot-drag
+            include heaer_wrapper
+            .portfolio-list-wrapper
+                ins.adsbygoogle(style={display: 'block', 'margin-bottom':'30px'} data-ad-client='ca-pub-1462947422010620' data-ad-slot='4984819246' data-ad-format='auto' data-full-width-responsive='true')
+                script.
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                | ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
