@@ -10,11 +10,22 @@ html(lang='ko')
         meta(property='og:title'        content=portfolioData.profile.coverText + ' - 경력')
         meta(property='og:description'  content=portfolioData.profile.desc)
         meta(property='og:image'        content='https://jupiterflow.com' + portfolioData.profile.image)
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css')
         link(rel='stylesheet' type='text/css' href='/static/style/global.css')
-        link(rel='stylesheet' type='text/css' href='/static/style/project-list.css')
+        link(rel='stylesheet' type='text/css' href='/static/style/career.css')
     body
         .wrapper.cannot-drag
             include heaer_wrapper
-            .list-content-wrapper
-                | ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ
+            .content-wrapper
+                .resume
+                    .sidebar-wrapper
+                    .main-wrapper
+                        section.summary-section
+                            h2.section-title
+                                span.fa-stack.fa-xs
+                                    i.fas.fa-circle.fa-stack-2x
+                                    i.fas.fa-user.fa-stack-1x.fa-inverse
+                                | career profile
+                            .summary
+                                p
+                                    | Summarise your career here lorem ipsum dolor sit amet, consectetuer adipiscing elit. You can download this free resume/CV template here. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu. Second paragraph if required.

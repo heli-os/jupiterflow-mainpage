@@ -51,7 +51,7 @@ if (process.env.RUN_ENVIRONMENT === 'DEBUG') {
         cert: fs.readFileSync('/etc/letsencrypt/live/jupiterflow.com/cert.pem')
     };
     https.createServer(optionsForHTTPS, app).listen(process.env.RUN_PORT, () => {
-        console.log(`${process.env.RUN_PORT} connected !``);
+        console.log(`${process.env.RUN_PORT} connected !`);
     });
 }
 
