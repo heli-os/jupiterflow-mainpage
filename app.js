@@ -54,4 +54,3 @@ if (process.env.RUN_ENVIRONMENT === 'DEBUG') {
         console.log(`${process.env.RUN_PORT} connected !`);
     });
 }
-
