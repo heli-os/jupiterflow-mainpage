@@ -3,11 +3,11 @@ html(lang='ko')
     head
         include head.pug
         link(rel='canonical' href='https://jupiterflow.com/project/' + postNum)
-        title= portfolioData.profile.coverText + ' - ' + portfolioData.content.project.data[postNum - 1].subject
-        meta(name='title' content=portfolioData.profile.coverText + ' - ' + portfolioData.content.project.data[postNum - 1].subject)
+        title= portfolioData.content.project.data[postNum - 1].subject + ' | ' + portfolioData.profile.coverText
+        meta(name='title' content=portfolioData.content.project.data[postNum - 1].subject + ' | ' + portfolioData.profile.coverText)
         meta(name='description' content=portfolioData.content.project.data[postNum - 1].desc)
         meta(property='og:url'          content='https://jupiterflow.com/project/' + postNum)
-        meta(property='og:title'        content=portfolioData.profile.coverText + ' - ' + portfolioData.content.project.data[postNum - 1].subject)
+        meta(property='og:title'        content=portfolioData.content.project.data[postNum - 1].subject + ' | ' + portfolioData.profile.coverText)
         meta(property='og:site_name'        content=portfolioData.profile.coverText)
         meta(property='og:description'  content=portfolioData.content.project.data[postNum - 1].desc)
         meta(property='og:image'        content='https://jupiterflow.com' + portfolioData.content.project.data[postNum - 1].img[0])

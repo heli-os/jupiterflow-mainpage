@@ -3,11 +3,11 @@ html(lang='ko')
     head
         include head.pug
         link(rel='canonical' href='https://jupiterflow.com/project')
-        title= portfolioData.profile.coverText + ' - 경력'
-        meta(name='title' content=portfolioData.profile.coverText + ' - 경력')
+        title= '경력 | ' + portfolioData.profile.coverText
+        meta(name='title' content='경력 | ' + portfolioData.profile.coverText)
         meta(name='description' content=portfolioData.profile.desc)
         meta(property='og:url'          content='https://jupiterflow.com/project')
-        meta(property='og:title'        content=portfolioData.profile.coverText + ' - 경력')
+        meta(property='og:title'        content='경력 | ' + portfolioData.profile.coverText)
         meta(property='og:description'  content=portfolioData.profile.desc)
         meta(property='og:image'        content='https://jupiterflow.com' + portfolioData.profile.image)
         link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css')
@@ -29,3 +29,57 @@ html(lang='ko')
                             .summary
                                 p
                                     | Summarise your career here lorem ipsum dolor sit amet, consectetuer adipiscing elit. You can download this free resume/CV template here. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu. Second paragraph if required.
+
+                        section.summary-section
+                            h2.section-title
+                                span.fa-stack.fa-xs
+                                    i.fas.fa-circle.fa-stack-2x
+                                    i.fas.fa-user.fa-stack-1x.fa-inverse
+                                | experiences
+                            - const careerData = portfolioData.career.data.slice()
+                            each career in careerData.reverse().slice(0, careerData.count)
+                                .item
+                                    .meta
+                                        .upper-row
+                                            h3.company= career.company
+                                            .period= career.period
+                                        .job-title= career.job
+                                    //.desc= career.desc
+                                    .details
+                                        p= career.detail
+
+                        section.summary-section
+                            h2.section-title
+                                span.fa-stack.fa-xs
+                                    i.fas.fa-circle.fa-stack-2x
+                                    i.fas.fa-file-alt.fa-stack-1x.fa-inverse
+                                | awards
+                            - const awardData = portfolioData.content.award.data.slice()
+                            each award in awardData.reverse().slice(0, portfolioData.content.award.count)
+                                .item
+                                    .meta
+                                        .upper-row
+                                            h3.company aaa
+                                            .period bbb
+                                        .job-title ccc
+                                    //.desc= career.desc
+                                    .details
+                                        p dddd
+
+                        section.summary-section
+                            h2.section-title
+                                span.fa-stack.fa-xs
+                                    i.fas.fa-circle.fa-stack-2x
+                                    i.fas.fa-certificate.fa-stack-1x.fa-inverse
+                                | certificate
+                            - const certificateData = portfolioData.content.certificate.data.slice()
+                            each certificate in certificateData.reverse().slice(0, portfolioData.content.certificate.count)
+                                .item
+                                    .meta
+                                        .upper-row
+                                            h3.company aaa
+                                            .period bbb
+                                        .job-title ccc
+                                    //.desc= career.desc
+                                    .details
+                                        p dddd

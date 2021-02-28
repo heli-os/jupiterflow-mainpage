@@ -123,7 +123,8 @@ body {
 .detail-box .social-contact {
     display: inline-block;
     margin-right: 14px;
-    font-size: .8rem;
+    font-size: .9rem;
+    line-height: 1.4rem;
     color: #0a0a0a;
 }
 
@@ -154,18 +155,18 @@ body {
 }
 
 .detail-box .normal-list li .list-text .job {
-    font-size: .85rem;
+    font-size: .9rem;
 }
 
 .detail-box .normal-list li .list-text .period {
     color: #666;
-    font-size: .7rem;
+    font-size: .85rem;
 }
 
 .detail-box .normal-list li .list-text .desc {
     margin-top: 10px;
     color: #666;
-    font-size: .85rem;
+    font-size: .8rem;
 }
 
 .wrapper .header .contact .right {

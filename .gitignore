@@ -108,6 +108,4 @@ dist
 .idea/
 #_config/
 
-# ync assignment filter
-ync/
-ync.js
+data/project/

@@ -41,33 +41,34 @@ html(lang='ko')
                 .dot-horizontal
                 .left
                     .detail-box(style={'margin-bottom': '12px'})
-                        each item in portfolioData.left.social
+                        each item in portfolioData.social
                             .social-contact
                                 img(src=item.ico)
                                 a(href=item.url target='_blank')= item.url
                     .detail-box
                         span.title 소개
-                        span!= portfolioData.left.info.replace(/\n/g, '<br>')
+                        span!= portfolioData.info.replace(/\n/g, '<br>')
                     .detail-box
                         a(href='/career').title 경력
                             span.edit-plus-btn 더 보기
-                        if portfolioData.left.career.data.length > 0
+                        if portfolioData.career.data.length > 0
                             ul.normal-list
-                                each item in portfolioData.left.career.data.slice(0, portfolioData.left.career.count)
+                                - const careerData = portfolioData.career.data.slice()
+                                each career in careerData.reverse().slice(0, portfolioData.career.count)
                                     li
                                         .list-text
-                                            .company= item.company
-                                            .job= item.job
-                                            .period= item.period
-                                            .desc= item.desc
+                                            .company= career.company
+                                            .period= career.period
+                                            .job= career.job
+                                            .desc= career.desc
                         else
                             div 등록된 경력이 없습니다.
 
                     .detail-box
                         span.title 교육
-                        if portfolioData.left.education.length > 0
+                        if portfolioData.education.length > 0
                             ul.normal-list
-                                each item in portfolioData.left.education
+                                each item in portfolioData.education
                                     li
                                         .list-text
                                             .company= item.company
