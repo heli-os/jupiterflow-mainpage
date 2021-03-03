@@ -12,10 +12,10 @@ html(lang='ko')
         meta(property='og:image'        content='https://jupiterflow.com' + portfolioData.profile.image)
         link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css')
         link(rel='stylesheet' type='text/css' href='/static/style/global.css')
-        link(rel='stylesheet' type='text/css' href='/static/style/career.css')
+        link(rel='stylesheet' type='text/css' href='/static/style/resume.css')
     body
         .wrapper.cannot-drag
-            include heaer_wrapper
+            include header_wrapper
             .content-wrapper
                 .resume
                     .sidebar-wrapper
@@ -41,10 +41,9 @@ html(lang='ko')
                                 .item
                                     .meta
                                         .upper-row
-                                            h3.company= career.company
-                                            .period= career.period
-                                        .job-title= career.job
-                                    //.desc= career.desc
+                                            h3.title= career.company
+                                            .date= career.period
+                                        .sub-title= career.job
                                     .details
                                         p= career.detail
 
@@ -55,31 +54,28 @@ html(lang='ko')
                                     i.fas.fa-file-alt.fa-stack-1x.fa-inverse
                                 | awards
                             - const awardData = portfolioData.content.award.data.slice()
-                            each award in awardData.reverse().slice(0, portfolioData.content.award.count)
+                            each award in awardData.reverse().slice(0, awardData.count)
                                 .item
                                     .meta
                                         .upper-row
-                                            h3.company aaa
-                                            .period bbb
-                                        .job-title ccc
-                                    //.desc= career.desc
-                                    .details
-                                        p dddd
+                                            h3.title= award.title
+                                            .date= award.date
+                                        .sub-title= award.organization
+                                    if award.detail
+                                        .details
+                                            p= award.detail
 
                         section.summary-section
                             h2.section-title
                                 span.fa-stack.fa-xs
                                     i.fas.fa-circle.fa-stack-2x
                                     i.fas.fa-certificate.fa-stack-1x.fa-inverse
-                                | certificate
-                            - const certificateData = portfolioData.content.certificate.data.slice()
-                            each certificate in certificateData.reverse().slice(0, portfolioData.content.certificate.count)
+                                | certification
+                            - const certificationeData = portfolioData.content.certification.data.slice()
+                            each certification in certificationeData.reverse().slice(0, certificationeData.count)
                                 .item
                                     .meta
                                         .upper-row
-                                            h3.company aaa
-                                            .period bbb
-                                        .job-title ccc
-                                    //.desc= career.desc
-                                    .details
-                                        p dddd
+                                            h3.title= certification.title
+                                            .date= certification.date
+                                        .sub-title= certification.organization

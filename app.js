@@ -38,7 +38,7 @@ const setParams = (req, res, next) => {
 app.use('/', setParams, require('./route/sitemaps'));
 app.use('/', setParams, require('./route/index'));
 app.use('/project', setParams, require('./route/project'));
-app.use('/career', setParams, require('./route/career'));
+app.use('/resume', setParams, require('./route/resume'));
 
 
 if (process.env.RUN_ENVIRONMENT === 'DEBUG') {

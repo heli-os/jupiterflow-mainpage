@@ -40,7 +40,7 @@ html(lang='ko')
             .body
                 .dot-horizontal
                 .left
-                    .detail-box(style={'margin-bottom': '12px'})
+                    .detail-box(style={'margin-bottom': '15px'})
                         each item in portfolioData.social
                             .social-contact
                                 img(src=item.ico)
@@ -49,8 +49,9 @@ html(lang='ko')
                         span.title 소개
                         span!= portfolioData.info.replace(/\n/g, '<br>')
                     .detail-box
-                        a(href='/career').title 경력
-                            span.edit-plus-btn 더 보기
+                        a(href='/resume') resume
+                    .detail-box
+                        span.title 경력
                         if portfolioData.career.data.length > 0
                             ul.normal-list
                                 - const careerData = portfolioData.career.data.slice()

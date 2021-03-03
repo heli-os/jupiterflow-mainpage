@@ -110,3 +110,49 @@ body {
 .list-content-wrapper {
     padding: 32px 32px 65px;
 }
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        min-width: 300px;
+        max-width: 768px;
+    }
+
+    .header-wrapper .header {
+        min-width: 300px;
+        max-width: 768px;
+        width: auto;
+    }
+
+    .writer {
+        margin: 0;
+        padding: 0 10px;
+        height: 76px;
+    }
+
+    .writer .profile {
+        float: left;
+        width: 72px;
+        height: 72px;
+    }
+
+    .writer .profile .img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .writer .info {
+        margin-left: 80px;
+        font-size: 1rem;
+        padding-top: 0;
+    }
+
+    .writer .info .name-wrapper {
+        height: 24px;
+        overflow: hidden;
+    }
+
+    .writer .info .sentence {
+        max-height: 22px;
+        overflow: hidden;
+    }
+}

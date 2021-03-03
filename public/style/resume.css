@@ -4,23 +4,23 @@ body {
 
 p {
     line-height: 1.5;
+    margin: 0;
 }
 
 .content-wrapper {
-    padding: 30px;
+    /*padding: 30px;*/
 }
 
 .resume {
     font-size: 14px;
     color: #545E6C;
-    max-width: 1000px;
-    margin: 0 auto;
+    /*max-width: 1000px;*/
+    /*margin: 0 auto;*/
+    margin: 0;
     position: relative;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .resume a {
-
     color: #2d7788;
 }
 
@@ -48,6 +48,10 @@ p {
     margin-bottom: 60px;
 }
 
+.summary-section:last-child {
+    margin-bottom: 0;
+}
+
 .section-title {
     text-transform: uppercase;
     font-size: 20px;
@@ -64,7 +68,11 @@ p {
 }
 
 .main-wrapper .summary-section .item {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
+}
+
+.main-wrapper .summary-section .item:last-child {
+    margin-bottom: 0;
 }
 
 .main-wrapper .upper-row {
@@ -73,22 +81,22 @@ p {
     margin-bottom: 2px;
 }
 
-.main-wrapper .job-title, .main-wrapper .university {
-    margin-bottom: 10px;
+.main-wrapper .sub-title, .main-wrapper .university {
+    margin-bottom: .5rem;
     color: #97AAC3;
     font-weight: 700;
 }
 
-.main-wrapper .degree, .main-wrapper .company {
+.main-wrapper .title {
     color: #3F4650;
-    font-size: 16px;
+    font-size: 1rem;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 700;
 }
 
 
-.main-wrapper .period {
+.main-wrapper .date {
     position: absolute;
     right: 0;
     top: 0;
@@ -96,5 +104,28 @@ p {
 }
 
 .main-wrapper .details {
-    font-weight: 00;
+    font-weight: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .sidebar-wrapper {
+        position: static;
+        width: inherit;
+    }
+
+    .header-wrapper {
+        display: none;
+    }
+
+    .main-wrapper {
+        padding: 25px;
+    }
+
+    .main-wrapper .date {
+        position: relative;
+    }
+
+    .main-wrapper .title {
+        font-size: 1.1rem;
+    }
 }
