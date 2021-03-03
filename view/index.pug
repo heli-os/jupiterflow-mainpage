@@ -26,16 +26,19 @@ html(lang='ko')
                 .contact
                     .center
                         .left
-                            span.circle-icon.cannot-drag
-                                i.material-icons email
+                            span.fa-stack.fa-xs.cannot-drag
+                                i.fas.fa-circle.fa-stack-2x
+                                i.far.fa-envelope.fa-stack-1x.fa-inverse
                             span.contact-txt
                                 a(href='mailto:' + portfolioData.profile.email)= portfolioData.profile.email
                         .right
-                            span.circle-icon.cannot-drag
-                                i.material-icons smartphone
+                            span.fa-stack.fa-xs.cannot-drag
+                                i.fas.fa-circle.fa-stack-2x
+                                i.fas.fa-mobile-alt.fa-stack-1x.fa-inverse
                             span.contact-txt= portfolioData.profile.phone
-                        span.circle-icon.cannot-drag
-                            i.material-icons work
+                        span.fa-stack.fa-xs.cannot-drag
+                            i.fas.fa-circle.fa-stack-2x
+                            i.fas.fa-briefcase.fa-stack-1x.fa-inverse
                         span.contact-txt= portfolioData.profile.work
             .body
                 .dot-horizontal
@@ -44,7 +47,7 @@ html(lang='ko')
                         each item in portfolioData.social
                             .social-contact
                                 img(src=item.ico)
-                                a(href=item.url target='_blank')= item.url
+                                a(href='//' + item.url target='_blank')= item.url
                     .detail-box
                         span.title 소개
                         span!= portfolioData.info.replace(/\n/g, '<br>')

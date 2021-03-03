@@ -13,15 +13,19 @@
   "social": [
     {
       "ico": "/static/images/profile/github-ico.png",
-      "url": "https://github.com/960813"
+      "url": "github.com/960813"
     },
     {
       "ico": "/static/images/profile/blog-ico.png",
-      "url": "https://blog.jupiterflow.com"
+      "url": "blog.jupiterflow.com"
     },
     {
       "ico": "/static/images/profile/youtube-ico.png",
-      "url": "https://bit.ly/2YPIcfD"
+      "url": "bit.ly/2YPIcfD"
+    },
+    {
+      "ico": "/static/images/profile/globe.png",
+      "url": "codefor.kr"
     }
   ],
   "career": {

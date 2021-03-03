@@ -90,24 +90,6 @@ body {
     margin: 0 auto;
 }
 
-.wrapper .header .contact .circle-icon {
-    background-color: #efefef;
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    text-align: center;
-    line-height: 2.2rem;
-    font-weight: 600;
-    margin-right: 5px;
-    font-size: 10px;
-}
-
-.wrapper .header .contact .circle-icon i {
-    font-size: 20px;
-    vertical-align: middle;
-}
-
 .wrapper .header .contact .contact-txt {
     vertical-align: middle;
 }
@@ -121,7 +103,7 @@ body {
 }
 
 .detail-box .social-contact {
-    display: inline-block;
+    display: block;
     margin-right: 14px;
     font-size: .9rem;
     line-height: 1.4rem;
@@ -408,20 +390,6 @@ body {
         width: auto;
         text-align: left;
         margin: 6px 0;
-    }
-
-    .wrapper .header .contact .circle-icon {
-        width: 20px;
-        height: 20px;
-        line-height: 22px;
-        font-weight: 600;
-        margin-right: 3px;
-        font-size: 8px;
-    }
-
-    .wrapper .header .contact .circle-icon i {
-        margin-top: -2px;
-        font-size: 12px;
     }
 
     .wrapper .header .contact .right {
