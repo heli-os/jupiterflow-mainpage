@@ -297,7 +297,7 @@
         {
           "subject": "코로나19 개인안심번호",
           "desc": "코로나19 수기출입명부의 개인정보 유출 이슈를 해결하기 위한 아이디어 제공/시스템 개발",
-          "markdown": "",
+          "markdown": "https://raw.githubusercontent.com/960813/jupiterflow-mainpage/master/_private/%EA%B0%9C%EC%9D%B8%EC%95%88%EC%8B%AC%EB%B2%88%ED%98%B8.md",
           "img": [
             "/static/images/project/11/00.jpg"
           ],
