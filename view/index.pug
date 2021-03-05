@@ -24,18 +24,18 @@ html(lang='ko')
                     span.h2-font= portfolioData.profile.name
                     span.h3-font!= portfolioData.profile.desc
                 .contact
-                    .center
-                        .left
-                            span.fa-stack.fa-xs.cannot-drag
-                                i.fas.fa-circle.fa-stack-2x
-                                i.far.fa-envelope.fa-stack-1x.fa-inverse
-                            span.contact-txt
-                                a(href='mailto:' + portfolioData.profile.email)= portfolioData.profile.email
-                        .right
-                            span.fa-stack.fa-xs.cannot-drag
-                                i.fas.fa-circle.fa-stack-2x
-                                i.fas.fa-mobile-alt.fa-stack-1x.fa-inverse
-                            span.contact-txt= portfolioData.profile.phone
+                    .contact-item
+                        span.fa-stack.fa-xs.cannot-drag
+                            i.fas.fa-circle.fa-stack-2x
+                            i.far.fa-envelope.fa-stack-1x.fa-inverse
+                        span.contact-txt
+                            a(href='mailto:' + portfolioData.profile.email)= portfolioData.profile.email
+                    .contact-item
+                        span.fa-stack.fa-xs.cannot-drag
+                            i.fas.fa-circle.fa-stack-2x
+                            i.fas.fa-mobile-alt.fa-stack-1x.fa-inverse
+                        span.contact-txt= portfolioData.profile.phone
+                    .contact-item
                         span.fa-stack.fa-xs.cannot-drag
                             i.fas.fa-circle.fa-stack-2x
                             i.fas.fa-briefcase.fa-stack-1x.fa-inverse
@@ -104,9 +104,10 @@ html(lang='ko')
                             - let sortable = []
                             each idx, stack in stackData
                                 - sortable.push([stack, stackData[stack]])
-                            - sortable.sort((a, b)=> { return b[1] - a[1]; })
+                            - sortable.sort((stack_name, stack_count)=> { return stack_count[1] - stack_name[1]; })
                             each item in sortable
-                                if portfolioData.content.stack_filter.indexOf(item[0]) > 0
+                                - let stack_filter = portfolioData.content.stack_filter.map(x => x.toUpperCase())
+                                if stack_filter.indexOf(item[0].toUpperCase()) > 0
                                     li
                                         =item[0]
                                         span.stack-cnt= item[1]
