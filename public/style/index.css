@@ -78,29 +78,23 @@ body {
 }
 
 .wrapper .header .contact {
-    width: 500px;
+    width: 450px;
     margin: 0 auto;
     padding: 20px 0;
     color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.wrapper .header .contact .center {
-    text-align: center;
-    width: 160px;
-    margin: 0 auto;
+.wrapper .header .contact .contact-item {
+    flex-grow: 1;
 }
 
 .wrapper .header .contact .contact-txt {
     vertical-align: middle;
 }
 
-.wrapper .header .contact .left {
-    position: absolute;
-    text-align: right;
-    width: 300px;
-    left: 50%;
-    margin-left: -380px;
-}
 
 .detail-box .social-contact {
     display: block;
@@ -149,14 +143,6 @@ body {
     margin-top: .5rem;
     color: #666;
     font-size: .8rem;
-}
-
-.wrapper .header .contact .right {
-    position: absolute;
-    text-align: left;
-    width: 300px;
-    left: 50%;
-    margin-left: 80px;
 }
 
 .wrapper .body {
