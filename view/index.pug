@@ -48,11 +48,13 @@ html(lang='ko')
                             .social-contact
                                 img(src=item.ico)
                                 a(href='//' + item.url target='_blank')= item.url
+                    .detail-box(style='margin-bottom:10px')
+                        span.title
+                            a(href='/resume') 이력서
+                                span.edit-plus-btn 더 보기
                     .detail-box
                         span.title 소개
                         span!= portfolioData.info.replace(/\n/g, '<br>')
-                    .detail-box
-                        a(href='/resume') resume
                     .detail-box
                         span.title 경력
                         if portfolioData.career.data.length > 0
