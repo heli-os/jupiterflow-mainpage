@@ -35,6 +35,7 @@ router.get('/sitemap.xml', (req, res, next) => {
 
 
         smStream.write({url: '/', changefreq: 'daily', priority: 1});
+        smStream.write({url: '/resume', changefreq: 'daily', priority: 1});
         smStream.write({url: '/project', changefreq: 'daily', priority: 0.8});
 
         portfolioData.content.project.data.forEach((item,idx) => {
