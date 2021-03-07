@@ -25,8 +25,7 @@ html(lang='ko')
                                     i.fas.fa-user.fa-stack-1x.fa-inverse
                                 | career profile
                             .summary
-                                p
-                                    | Summarise your career here lorem ipsum dolor sit amet, consectetuer adipiscing elit. You can download this free resume/CV template here. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu. Second paragraph if required.
+                                p!= portfolioData.info_long.replace(/\n/g, '<br/>')
 
                         section.summary-section
                             h2.section-title

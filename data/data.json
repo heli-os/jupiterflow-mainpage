@@ -9,7 +9,8 @@
     "work": "Inactive",
     "phone": "Private"
   },
-  "info": "저는 기존에 정부에서 제공하는 데이터 관련 서비스를 간소화해, 개발자가 아닌 시민들도 데이터를 활용할 수 있는 시스템을 구축하고자합니다.",
+  "info_short": "저는 기존에 정부에서 제공하는 데이터 관련 서비스를 간소화해, 개발자가 아닌 시민들도 데이터를 활용할 수 있는 시스템을 구축하고자합니다.",
+  "info_long": "asdasdsa\nasdsad\ngfsdzgfdgdfs",
   "social": [
     {
       "ico": "/static/images/profile/github-ico.png",

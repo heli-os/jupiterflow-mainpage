@@ -54,7 +54,7 @@ html(lang='ko')
                                 span.edit-plus-btn 더 보기
                     .detail-box
                         span.title 소개
-                        span!= portfolioData.info.replace(/\n/g, '<br>')
+                        span!= portfolioData.info_short.replace(/\n/g, '<br/>')
                     .detail-box
                         span.title 경력
                         if portfolioData.career.data.length > 0
