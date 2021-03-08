@@ -15,7 +15,7 @@ router.get('/robots.txt',(req,res,next)=>{
     res.send('User-agent: *' + '\n' +
         'Allow: /' + '\n' +
         'Allow: /ads.txt' + '\n' +
-        'Sitemap: https://jupiterflow.com/sitemap.xml'
+        'Sitemap: https://www.jupiterflow.com/sitemap.xml'
     );
 });
 
@@ -30,7 +30,7 @@ router.get('/sitemap.xml', (req, res, next) => {
         return
     }
     try {
-        const smStream = new SitemapStream({hostname: 'https://jupiterflow.com/'});
+        const smStream = new SitemapStream({hostname: 'https://www.jupiterflow.com/'});
         const pipeline = smStream.pipe(createGzip());
 
 
