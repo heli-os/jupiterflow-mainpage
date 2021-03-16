@@ -40,9 +40,9 @@ html(lang='ko')
                                         .upper-row
                                             h3.title= career.company
                                             .date= career.period
-                                        .sub-title= career.job
-                                            | |
-                                            = career.desc
+                                        .sub-title= career.desc
+                                            | &nbsp;|&nbsp;
+                                            career.job
                                     .details
                                         p= career.detail
 
