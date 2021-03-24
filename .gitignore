@@ -109,3 +109,5 @@ dist
 #_config/
 
 data/project/
+
+.DS_Store
