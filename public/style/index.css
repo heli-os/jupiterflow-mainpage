@@ -347,6 +347,7 @@ body {
 
     .wrapper .header .name {
         width: auto;
+        padding: 7px;
     }
 
     .wrapper .header .name .h2-font {

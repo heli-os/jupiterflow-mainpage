@@ -102,6 +102,7 @@ body {
 }
 
 .writer .info .sentence {
+    font-size: .95rem;
     font-family: "Noto Serif KR", "serif";
     margin: 3px 0;
     color: #666;

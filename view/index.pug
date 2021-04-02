@@ -24,7 +24,8 @@ html(lang='ko')
                     .profile(style={'background-image': 'url(' + portfolioData.profile.image + ')'})
                 .name
                     span.h2-font= portfolioData.profile.name
-                    span.h3-font!= portfolioData.profile.desc
+                    span.h3-font!= portfolioData.info_short.replace(/\n/g, '<br/>')
+                    //span.h3-font!= portfolioData.profile.desc
                 .contact
                     .contact-item
                         span.fa-stack.fa-xs.cannot-drag
@@ -50,7 +51,7 @@ html(lang='ko')
                             .social-contact
                                 img(src=item.ico)
                                 a(href='//' + item.url target='_blank')= item.url
-                    .detail-box(style='margin-bottom:10px')
+                    //.detail-box(style='margin-bottom:10px')
                         span.title
                             a(href='/static/pdf' target='_blank') 포트폴리오 PDF
                                 span.edit-plus-btn 더 보기
@@ -58,7 +59,7 @@ html(lang='ko')
                         span.title
                             a(href='/resume') 이력서
                                 span.edit-plus-btn 더 보기
-                    .detail-box
+                    //.detail-box
                         span.title 소개
                         span!= portfolioData.info_short.replace(/\n/g, '<br/>')
                     .detail-box
@@ -89,7 +90,7 @@ html(lang='ko')
                         else
                             div 등록된 교육이 없습니다.
 
-                    .detail-box
+                    //.detail-box
                         span.title 기타 활동 및 수상
                         a(href='https://blog.jupiterflow.com/about/' target='_blank') https://blog.jupiterflow.com/about/
 
@@ -99,26 +100,6 @@ html(lang='ko')
                             (adsbygoogle = window.adsbygoogle || []).push({});
 
                 .content
-                    .detail-box
-                        span.title Tech Stack
-                        ul.stack-list
-                            - let stackData={}
-                            each project in portfolioData.content.project.data
-                                each stack in project.stack
-                                    if stackData[stack]
-                                        - stackData[stack]++
-                                    else
-                                        - stackData[stack] = 1
-                            - let sortable = []
-                            each idx, stack in stackData
-                                - sortable.push([stack, stackData[stack]])
-                            - sortable.sort((stack_name, stack_count)=> { return stack_count[1] - stack_name[1]; })
-                            each item in sortable
-                                - let stack_filter = portfolioData.content.stack_filter.map(x => x.toUpperCase())
-                                if stack_filter.indexOf(item[0].toUpperCase()) > 0
-                                    li
-                                        =item[0]
-                                        span.stack-cnt= item[1]
                     .detail-box
                         .title
                             a(href='/project') 프로젝트
@@ -142,7 +123,6 @@ html(lang='ko')
                                                         li
                                                             span.stack-circle(style={color: colorScheme.scheme[stack]}) ●
                                                             = ' ' + stack
-
                     .detail-box.detail-box__posts
                         span.title
                             //a(href='')
@@ -156,3 +136,23 @@ html(lang='ko')
                                             .img(style={'background-image': 'url(' + item.img + ')'})
                                         .list-content
                                             .subject= item.subject
+                    //.detail-box
+                        span.title Tech Stack
+                        ul.stack-list
+                            - let stackData={}
+                            each project in portfolioData.content.project.data
+                                each stack in project.stack
+                                    if stackData[stack]
+                                        - stackData[stack]++
+                                    else
+                                        - stackData[stack] = 1
+                            - let sortable = []
+                            each idx, stack in stackData
+                                - sortable.push([stack, stackData[stack]])
+                            - sortable.sort((stack_name, stack_count)=> { return stack_count[1] - stack_name[1]; })
+                            each item in sortable
+                                - let stack_filter = portfolioData.content.stack_filter.map(x => x.toUpperCase())
+                                if stack_filter.indexOf(item[0].toUpperCase()) > 0
+                                    li
+                                        =item[0]
+                                        span.stack-cnt= item[1]
