@@ -462,6 +462,11 @@
         "url": "//blog.jupiterflow.com"
       },
       {
+        "subject": "Code for Korea BLOG",
+        "img": "/static/images/c4k-blog.png",
+        "url": "//medium.com/codeforkorea"
+      },
+      {
         "subject": "NAVER 지식iN",
         "img": "/static/images/sdn.png",
         "url": "//kin.naver.com/profile/index.nhn?u=%2FABXPKGzDSxT1ntlABi1abcMhL8jw2LzRs6sb8WE3NQ%3D"
