@@ -457,14 +457,14 @@
     },
     "post": [
       {
-        "subject": "JupiterFlow BLOG",
-        "img": "/static/images/jupiter.png",
-        "url": "//blog.jupiterflow.com"
-      },
-      {
         "subject": "Code for Korea BLOG",
         "img": "/static/images/c4k-blog.png",
         "url": "//medium.com/codeforkorea"
+      },
+      {
+        "subject": "JupiterFlow BLOG",
+        "img": "/static/images/jupiter.png",
+        "url": "//blog.jupiterflow.com"
       },
       {
         "subject": "NAVER 지식iN",
