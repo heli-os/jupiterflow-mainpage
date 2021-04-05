@@ -273,6 +273,12 @@ body {
 
 .detail-box .portfolio-list > a > li .list-content .period {
     font-size: .8rem;
+    color: #000000;
+    font-weight: 600;
+}
+
+.detail-box .portfolio-list > a > li .list-content .period {
+    font-size: .8rem;
     color: #999;
     font-weight: 600;
 }

@@ -104,7 +104,8 @@
       "data": [
         {
           "subject": "HTML5 Delivery Tracker",
-          "desc": "영남이공대학교 컴퓨터정보과 2019학년도 1학년 1학기 HTML5/CSS3 기말 실기시험(프로젝트 제작 및 발표) 평가를 위해 제작된 프로젝트입니다.",
+          "desc": "배송조회 API와 PHP를 이용한 통합 배송 조회 웹 서비스",
+          "detail": "영남이공대학교 컴퓨터정보과 2019학년도 1학년 1학기 HTML5/CSS3 기말 실기시험(프로젝트 제작 및 발표) 평가를 위해 제작된 프로젝트입니다.",
           "markdown": "https://raw.githubusercontent.com/960813/html5_ync_delivery-tracker/master/README.md",
           "img": [
             "/static/images/project/1/000.png"
@@ -122,7 +123,8 @@
         },
         {
           "subject": "스마트 사이니지 API & Interface",
-          "desc": "구형 스마트폰을 엔진으로 한 스마트 사이니지 원격 CMS 셋톱박스 창업 아이템 서버 소스코드",
+          "desc": "구형 스마트폰을 엔진으로 한 스마트 사이니지 원격 CMS 셋톱박스",
+          "detail": "구형 스마트폰을 엔진으로 한 스마트 사이니지 원격 CMS 셋톱박스",
           "markdown": "https://raw.githubusercontent.com/960813/icms/master/README.md",
           "img": [
             "/static/images/project/2/000.jpg",
@@ -141,7 +143,8 @@
         },
         {
           "subject": "PIRARE(Pinterest semi clone with PHP)",
-          "desc": "PHP를 이용해 Pinterest 서비스를 클론한 웹 개발 프로젝트입니다.",
+          "desc": "Pinterest 클론 웹 프로젝트",
+          "detail": "PHP를 이용해 Pinterest 서비스를 클론한 웹 개발 프로젝트입니다.",
           "markdown": "https://raw.githubusercontent.com/960813/pirare/master/README.md",
           "img": [
             "/static/images/project/3/000.png",
@@ -164,7 +167,8 @@
         },
         {
           "subject": "스마트 공기 청정기 지니",
-          "desc": "[제 1회 YNC 메이커톤] 미세먼지 감지와 공기청정 기능을 가진 무드등 및 CMS",
+          "desc": "미세먼지 감지와 공기청정 기능을 가진 무드등 및 CMS",
+          "detail": "[제 1회 YNC 메이커톤] 미세먼지 감지와 공기청정 기능을 가진 무드등 및 CMS",
           "markdown": "https://raw.githubusercontent.com/960813/nodeMCU_air-purifier/master/README.md",
           "img": [
             "/static/images/project/4/000.png",
@@ -188,7 +192,8 @@
         },
         {
           "subject": "Pokemon",
-          "desc": "This is an online Pokemon game where data is synchronized to the central server.",
+          "desc": "C언어로 개발한 온라인 포켓몬",
+          "detail": "This is an online Pokemon game where data is synchronized to the central server.",
           "markdown": "https://raw.githubusercontent.com/960813/pokemon/master/README.md",
           "img": [
             "/static/images/project/5/000.png"
@@ -206,7 +211,8 @@
         },
         {
           "subject": "영화진흥위원회 오픈 API 활용 웹",
-          "desc": "[kobis-movie-app] 영화진흥위원회 오픈 API 활용 제이쿼리 과제",
+          "desc": "일별 박스오피스 랭킹(1위~10위) API 및 포스터 추출을 통한 시각화",
+          "detail": "[kobis-movie-app] 영화진흥위원회 오픈 API 활용 제이쿼리 과제",
           "markdown": "https://raw.githubusercontent.com/960813/JQuery-kobis-app/master/README.md",
           "img": [
             "/static/images/project/6/001.JPG",
@@ -226,7 +232,8 @@
         },
         {
           "subject": "Pokemon Web",
-          "desc": "This is a website where you can download the other project (online Pokemon) and get information about Pokemon.",
+          "desc": "C언어로 개발한 온라인 포켓몬 웹 사이트",
+          "detail": "This is a website where you can download the other project (online Pokemon) and get information about Pokemon.",
           "markdown": "https://raw.githubusercontent.com/960813/pokemon-web/master/README.md",
           "img": [
             "/static/images/project/7/000.png",
@@ -247,7 +254,8 @@
         },
         {
           "subject": "웨어마스크",
-          "desc": "코로나19에 대응하기 위한 공적마스크 재고 알리미 사이트",
+          "desc": "공적마스크 재고 현황 지도 웹 서비스",
+          "detail": "코로나19에 대응하기 위한 공적마스크 재고 알리미 사이트",
           "markdown": "",
           "img": [
             "/static/images/project/8/000.png"
@@ -263,7 +271,8 @@
         },
         {
           "subject": "가온길",
-          "desc": "본 서비스는 21대 국회 공약과 공개된 군 입찰 내역, 언론 보도자료 등을 바탕으로 국민의 세금이 얼마나 투명하게 집행되고 있는지 시각적으로 보여줍니다.",
+          "desc": "세금 집행 시각화 프로젝트",
+          "detail": "21대 국회 공약과 공개된 군 입찰 내역, 언론 보도자료를 바탕으로 국민의 세금이 얼마나 투명하게 집행되고 있는지 시각적으로 보여줍니다.",
           "markdown": "https://raw.githubusercontent.com/TEAM-TROST/gaongill/master/README.md",
           "img": [
             "/static/images/project/9/000.png",
@@ -281,7 +290,8 @@
         },
         {
           "subject": "영이공 LMS 서포터",
-          "desc": "영남이공대학교 LMS 지원 확장 프로그램입니다. 학습하지 않은 강의와 과제를 한눈에 볼 수 있습니다!",
+          "desc": "학습하지 않은 강의와 과제를 보여주는 LMS 지원 프로그램",
+          "detail": "영남이공대학교 LMS 지원 확장 프로그램입니다. 학습하지 않은 강의와 과제를 한눈에 볼 수 있습니다!",
           "markdown": "https://raw.githubusercontent.com/960813/ync-lms-supporter/master/README.md",
           "img": [
             "/static/images/project/10/00.png",
@@ -297,7 +307,8 @@
         },
         {
           "subject": "코로나19 개인안심번호",
-          "desc": "코로나19 수기출입명부의 개인정보 유출 이슈를 해결하기 위한 아이디어 제공/시스템 개발",
+          "desc": "네이버, 카카오, PASS 앱에 도입된 시스템",
+          "detail": "코로나19 수기출입명부의 개인정보 유출 이슈를 해결하기 위한 아이디어 제공/시스템 개발",
           "markdown": "https://raw.githubusercontent.com/960813/jupiterflow-mainpage/master/_private/%EA%B0%9C%EC%9D%B8%EC%95%88%EC%8B%AC%EB%B2%88%ED%98%B8.md",
           "img": [
             "/static/images/project/11/00.jpg"
