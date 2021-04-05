@@ -269,16 +269,17 @@ body {
     word-break: break-all;
     max-height: 54px;
     overflow: hidden;
+    line-height: 1.1rem;
 }
 
-.detail-box .portfolio-list > a > li .list-content .period {
+.detail-box .portfolio-list > a > li .list-content .desc {
     font-size: .8rem;
-    color: #000000;
+    color: #007d3d;
     font-weight: 600;
 }
 
 .detail-box .portfolio-list > a > li .list-content .period {
-    font-size: .8rem;
+    font-size: .75rem;
     color: #999;
     font-weight: 600;
 }
