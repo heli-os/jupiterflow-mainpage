@@ -73,6 +73,18 @@
         "period": "2021.02.04",
         "desc": "전자정부서비스 혁신을 위한 국민참여 기반의 비대면 경진대회 기획",
         "detail": "① 비대면 경진대회 운영 노하우 및 사전 고려사항 공유 ② 전자정부 웹사이트 UI/UX 개선을 위한 국민참여 기반의 비대면 경진대회 개최 방안 논의"
+      },
+      {
+        "company": "핵클",
+        "job": "Software Engineer(Backend)",
+        "period": "2021.06.21 - 2021.11.09",
+        "desc": "소프트웨어 엔지니어(백엔드)"
+      },
+      {
+        "company": "카카오페이",
+        "job": "Software Development Engineer",
+        "period": "2022.01.03 - PRESENT",
+        "desc": "금융코어플랫폼TF 머니인프라플랫폼팀"
       }
     ]
   },
